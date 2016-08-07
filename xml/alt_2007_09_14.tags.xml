@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tagset SYSTEM "tagset.dtd">
+
+<!--
+    Defines a polish tagset used by the Neurpheus Morhological Analyser.
+    
+    The tagset bases on a tagset used by the Morfologik project 
+    (http://morfologik.blogspot.com/) which is derived from the IPI PAN tagset
+    (http://www.korpus.pl/pl/cheatsheet/node2.html).
+    
+    Descriptions of categories and tags have been taken from the Wikipedia 
+    (http://pl.wikipedia.org/ , http://en.wikipedia.org/).
+    
+    creation-date : 14 September 2007
+    created-by: Jakub Strychowski
+    modified-by: Jakub Strychowski
+    modification-date: 14 September 2007
+-->    
+<tagset>
+    <language>
+        <symbol>pl</symbol>
+        <name language="pl">język polski</name>
+        <name language="en">polish language</name>
+    </language>
+    <category id="part-of-speech">
+        <name language="en">part of speech</name>
+        <description language="en">
+            In grammar, a lexical category (also word class, lexical class, or in traditional grammar 
+            part of speech) is a linguistic category of words (or more precisely lexical items), 
+            which is generally defined by the syntactic or morphological behaviour of the lexical 
+            item in question. Common linguistic categories include noun and verb, among others. 
+            There are open word classes, which constantly acquire new members, and closed word classes, 
+            which acquire new members infrequently if at all.
+            Different languages may have different lexical categories, or they might associate 
+            different properties to the same one. For example, Spanish uses adjectives almost 
+            interchangeably as nouns while English cannot. Japanese has two classes of adjectives 
+            where English has one; Chinese and Japanese have measure words while European languages 
+            have nothing resembling them; many languages don't have a distinction between adjectives 
+            and adverbs, or adjectives and nouns, etc. Many linguists argue that the formal 
+            distinctions between parts of speech must be made within the framework of a specific 
+            language or language family, and should not be carried over to other languages or 
+            language families.
+        </description>
+        <name language="pl">część mowy</name>
+        <description language="pl">
+            Część mowy to specyficzna dla danego języka, wyróżniona głównie na podstawie kryteriów
+            składniowych i fleksyjnych klasa wyrazów. Nie istnieją żadne "uniwersalne" części mowy, 
+            które istniałyby w każdym języku, i - choć często dla "podobnych" klas różnych języków
+            używa się tej samej nazwy, np. "rzeczownik" w języku polskim i w języku angielskim - są to
+            jednak zupełnie różne twory. Nie ma więc sensu mówienie o ogólnych właściwościach "rzeczownika",
+            gdyż taki twór po prostu nie istnieje. Co więcej dla danego języka istnieć może wiele bardzo
+            różnych od siebie klasyfikacji części mowy. Po pierwsze nie jest jasne rozróżnienie między
+            pełną "częścią mowy" a jedną z form jakiejś innej części - np. przysłówek odprzymiotnikowy
+            w języku angielskim można traktować jako część mowy lub też jako formę przymiotnika.
+            Drugim dużym problemem jest niejasne pojęcie wyrazu - wyraz w przeciwieństwie do dość dobrze
+            ustalonego morfemu jest pojęciem dość dowolnym, więc przyjęcie różnych definicji wyrazu
+            prowadzi do różnych części mowy. Można też określać części mowy na samych morfemach, 
+            co prowadzi do bardzo specyficznych klasyfikacji.            
+        </description>
+        <tags>
+            <tag id="adj">
+                <symbol>adj</symbol>
+                <name language="pl">przymiotnik</name>
+                <description language="pl">
+                    Przymiotnik to część mowy określająca cechy i właściwości ludzi, zwierząt, roślin, 
+                    rzeczy, zjawisk. W językach indoeuropejskich przymiotniki są zwykle odmienne przez 
+                    liczby, rodzaje, a często też przypadki, podlegają stopniowaniu. Przymiotnik może 
+                    w nich też pełnić funkcję rzeczownika. ("Robin Hood zabierał bogatym i dawał 
+                    biednym" - przymiotniki "bogatym" i "biednym" użyte w roli rzeczowników). Problemem 
+                    na szerszą skalę jest używanie błędnych form przymiotnikowych w stopniu wyższym i 
+                    czasem także najwyższym.                    
+                </description>
+                <name language="en">adjective</name>
+                <description language="en">
+                    In grammar, an adjective is a word whose main syntactic role is to modify a noun or 
+                    pronoun (called the adjective's subject), giving more information about what the noun
+                    or pronoun refers to. Collectively, adjectives form one of the traditional eight parts
+                    of speech, though linguists today distinguish adjectives from words such as determiners
+                    that used to be considered adjectives but that are now recognized to be different. 
+                    Not all languages have adjectives, but most, including English, do. (English adjectives
+                    include big, old, and tired, among many others.) Those that don't typically use words
+                    of another part of speech, often verbs, to serve the same semantic function; 
+                    for example, such a language might have a verb that means "to be big", and would use 
+                    a construction analogous to "big-being house" to express what English expresses 
+                    as "big house". Even in languages that do have adjectives, one language's adjective 
+                    might not be another's; for example, where English has "to be hungry" (hungry being 
+                    an adjective), French has "avoir faim" (literally "to have hunger"), and where 
+                    Hebrew has the adjective "זקוק" (zaqūq, roughly "in need of"), English uses the 
+                    verb "to need". In most languages with adjectives, they form an open class of words;
+                    that is, it is relatively common for new adjectives to be formed via such processes 
+                    as derivation.                    
+                </description>
+                <examples>
+                    <example language="pl">wysoki</example>
+                    <example language="pl">niski</example>
+                </examples>
+            </tag>
+            <tag id="subst">
+                <symbol>subst</symbol>
+                <name language="pl">rzeczownik</name>
+                <description language="pl">
+                    Rzeczownik – część mowy nazywająca rzeczy, obiekty, osoby, rośliny, zwierzęta, zjawiska, 
+                    pojęcia abstrakcyjne, prymarnie pełniąca funkcję podmiotu w zdaniu. Rzeczowniki w języku 
+                    polskim mogą odmieniać się przez liczby i przypadki. Odmianę rzeczowników nazywamy deklinacją. 
+                    W większości języków istnieje jakiś system klasyfikacji rzeczowników. Systemy te to zwykle system
+                    rodzajów (niewielka zamknięta liczba kategorii mająca duży wpływ na inne konstrukcje języka) lub
+                    system liczników (duża otwarta liczba kategorii mająca ograniczony wpływ na inne konstrukcje, 
+                    np. przy liczeniu) albo klasy. Większość języków indoeuropejskich ma system rodzajów - 
+                    od 2 (włoski, francuski), przez 3 (łacina, niemiecki) do nawet 5 (polski). Języki japoński 
+                    oraz chiński są przykładami języków z systemem liczników. Pewne zmiany zachodzące we współczesnym
+                    angielskim można zinterpretować jako przejście od systemu rodzajów (który prawie zanikł) do 
+                    systemu liczników (które odgrywają coraz większą rolę w języku).Odpowiada na pytania: co to? kto to?                    
+                </description>
+                <name language="en">noun</name>
+                <description language="en">
+                    In linguistics, a noun or noun substantive is a lexical category which is defined in terms of how 
+                    its members combine with other grammatical kinds of expressions. Since different languages have 
+                    different inventories of grammatical categories, the definition of noun will differ from language 
+                    to language. In English, nouns can be defined as those morphological stems that form words which
+                    can co-occur with (in)definite articles and attributive adjectives, and function as the head 
+                    of a noun phrase.
+                </description>
+                <examples>
+                    <example language="pl">dom</example>
+                    <example language="pl">krzesło</example>
+                    <example language="pl">ławka</example>
+                </examples>
+            </tag>
+            <tag id="ger">
+                <symbol>ger</symbol>
+                <name language="pl">rzeczownik odsłowny</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="depr">
+                <symbol>depr</symbol>
+                <name language="pl">forma deprecjatywna</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="verb">
+                <symbol>verb</symbol>
+                <name language="pl">czasownik</name>
+                <description language="pl">
+                    Czasownik – część mowy przedstawiająca dziejące się czynności oraz niektóre stany, w zdaniu 
+                    tworzy orzeczenie. Nie w każdym języku da się wyróżnić jasną klasę czasowników, np. w języku 
+                    japońskim przymiotniki mają wiele właściwości charakterystycznych dla czasowników.
+                </description>
+                <name language="en">verb</name>
+                <description language="en">
+                    In syntax, a verb is a word belonging to the part of speech that usually denotes an action 
+                    (bring, read), an occurrence (decompose, glitter), or a state of being (exist, stand). 
+                    Depending on the language, a verb may vary in form according to many factors, possibly 
+                    including its tense, aspect, mood and voice. It may also agree with the person, gender, 
+                    and/or number of some of its arguments (subject, object, etc.).
+                </description>
+                <examples>
+                    <example language="pl">chodzić</example>
+                    <example language="pl">skakać</example>
+                    <example language="pl">myśleć</example>
+                </examples>
+            </tag>
+            <tag id="adv">
+                <symbol>adv</symbol>
+                <name language="pl">przysłówek</name>
+                <description language="pl">
+                    Przysłówek - nieodmienna część mowy, określająca cechy czynności, stany oraz inne cechy. 
+                    Występuje zawsze z czasownikiem, przymiotnikiem lub innym przysłówkiem. Pełni funkcję 
+                    okolicznika, orzecznika. Tworzy się je najczęściej od przymiotników za pomocą końcówki -e, -o. 
+                    Przysłówki utworzone od przymiotników (odprzymiotnikowe) zazwyczaj stopniują się 
+                    (tak jak przymiotniki, od których pochodzą). Pozostałe przysłówki, np. dziś, wczoraj, 
+                    zawsze, nie stopniują się.
+                </description>
+                <name language="en">adverb</name>
+                <description language="en">
+                    An adverb is a part of speech. It is any word that modifies any other part of language: 
+                    verbs, adjectives (including numbers), clauses, sentences and other adverbs, except for 
+                    nouns; modifiers of nouns are primarily determiners and adjectives. Adverbs typically 
+                    answer such questions as how?, when?, where?, To what extent?, In what kind or how often? 
+                    This function is called the adverbial function, and is realized not just by single words 
+                    (i.e., adverbs) but by adverbial phrases and adverbial clauses. Adverbs also describe 
+                    adjectives, verbs, and other adverbs.
+                </description>
+                <examples>
+                    <example language="pl">szybko</example>
+                    <example language="pl">wysoko</example>
+                    <example language="pl">sprawnie</example>
+                </examples>
+            </tag>
+            <tag id="conj">
+                <symbol>conj</symbol>
+                <name language="pl">spójnik</name>
+                <description language="pl">
+                    Spójnik - nieodmienna część mowy. Spójnikami są wyrazy łączące słowa, dwie 
+                    jednorodne części zdania lub wyrażenia.
+                </description>
+                <name language="en">conjuction</name>
+                <description language="en">
+                    In grammar, a conjunction is a part of speech that connects two words, phrases, 
+                    or clauses together. This definition may overlap with that of other parts of speech, 
+                    so what constitutes a "conjunction" should be defined for each language. In general, 
+                    a conjunction is an invariable grammatical particle, and it may or may not stand between 
+                    the items it conjoins. The definition can also be extended to idiomatic phrases that 
+                    behave as a unit with the same function as a single-word conjunction 
+                    (as well as, provided that, etc.).
+                </description>
+                <examples>
+                    <example language="pl">a</example>
+                    <example language="pl">i</example>
+                    <example language="pl">też</example>
+                </examples>
+            </tag>
+            <tag id="prep">
+                <symbol>prep</symbol>
+                <name language="pl">przyimek</name>
+                <description language="pl">
+                    Przyimek (łac. praepositio) – nieodmienna część mowy, która łączy się z wyrazem i 
+                    nadaje mu inny sens; np. rzeczownik stół tworzy z przyimkami wiele zestawień: 
+                    na stole, o stole, za stołem, obok stołu, po stole, pod stołem, zza stołu, koło stołu, 
+                    przy stole, ponad stołem, od stołu, ku stołowi. Przyimek w połączeniu z rzeczownikiem, 
+                    przymiotnikiem, liczebnikiem tworzy wyrażenie przyimkowe, np. z nudów, ze strachu, 
+                    sklep z butami, zeszyt w kratkę, z piętnaście, ze sto, z milion.
+                </description>
+                <name language="en">preposition</name>
+                <description language="en">
+                    In grammar, an adposition (preposition) is an element that, prototypically, combines 
+                    syntactically with a phrase and indicates how that phrase should be interpreted 
+                    in the surrounding context. If the location of a particular adposition is fixed 
+                    with respect to its complement phrase, it may also be known as a preposition 
+                    (comes before the phrase), postposition (after the phrase), or circumposition 
+                    (around the phrase). In the terminology of some linguists, an adposition is called 
+                    a preposition regardless of its position relative to its complement.
+                </description>
+                <examples>
+                    <example language="pl">w</example>
+                    <example language="pl">na</example>
+                    <example language="pl">nad</example>
+                </examples>
+            </tag>
+            <tag id="num">
+                <symbol>num</symbol>
+                <name language="pl">liczebnik</name>
+                <description language="pl">
+                    Liczebnik jest częścią mowy określającą liczbę, ilość, wielokrotność lub kolejność. 
+                    Niektóre liczebniki (np. główne) odmieniają się (przez przypadki i rodzaje), jednak 
+                    zjawisko to uzależnione jest od typu liczebnika. Łączy się z rzeczownikiem, określając 
+                    go. Podlega deklinacji. W języku polskim istnieją następujące rodzaje liczebników: 
+                    główne - jeden, dwa, trzy, cztery, pięć, sześć, siedem, osiem, dziewięć, dziesięć, 
+                    sto, tysiąc; porządkowe - pierwszy, setny, tysięczny; ułamkowe - ćwierć, pół, półtora, 
+                    jedna druga, trzy czwarte; zbiorowe - dwoje, troje, czworo, pięcioro, sześcioro, 
+                    siedmioro, ośmioro, dziewięcioro, dziesięcioro; mnożne - podwójny, potrójny, poczwórny; 
+                    nieokreślone - niewiele, kilka, kilkadziesiąt, kilkaset, wiele. Liczebniki zbiorowe 
+                    łączą się z rzeczownikami: mającymi tylko liczbę mnogą (np.troje skrzypiec), 
+                    oznaczającymi osoby różnej płci (np.dwoje ludzi), oznaczającymi istoty niedorosłe 
+                    (np.czworo dzieci). Stosujemy je także w tradycyjnych połączeniach wyrazowych 
+                    (np. dwoje oczu, dwoje uszu). Liczebniki – jedni, dwaj, dwóch, obaj, obydwaj, 
+                    obydwóch (obydwu), trzej, trzech, czterej, czterech – łączą się z rzeczownikami 
+                    męskoosobowymi: dwaj panowie poszli, dwóch panów poszło; pozostałe liczebniki łączą się 
+                    z rzeczownikami niemęskoosobowymi: jedne książki, dwa konie, dwie linie itp.
+                </description>
+                <name language="en">number</name>
+                <description language="en">
+                    A number is an abstract idea used in counting and measuring. A symbol which represents 
+                    a number is called a numeral, but in common usage the word number is used for both 
+                    the idea and the symbol. In addition to their use in counting and measuring, numerals 
+                    are often used for labels (telephone numbers), for ordering (serial numbers), 
+                    and for codes (ISBNs). In mathematics, the definition of number has been extended 
+                    over the years to include such numbers as zero, negative numbers, rational numbers, 
+                    irrational numbers, and complex numbers.
+                </description>
+                <examples>
+                    <example language="pl">jeden</example>
+                    <example language="pl">milionem</example>
+                </examples>
+            </tag>
+            <tag id="adjp">
+                <symbol>adjp</symbol>
+                <name language="pl">przymiotnik poprzyimkowy</name>
+                <description language="pl">
+                    Przymiotnik poprzyimkowy to fleksem utworzony dla opisania form typu polsku 
+                    występujących wyłącznie we frazach typu po polsku.
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl">niemiecku</example>
+                    <example language="pl">mongolsku</example>
+                </examples>
+            </tag>
+            <tag id="ign">
+                <symbol>ign</symbol>
+                <name language="pl">ignorowana część mowy</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="indecl">
+                <symbol>indecl</symbol>
+                <name language="pl">nieodmienna część mowy</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="pact">
+                <symbol>pact</symbol>
+                <name language="pl">imiesłów przymiotnikowy czynny</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="pant">
+                <symbol>pant</symbol>
+                <name language="pl">imiesłów przysłówkowy uprzedni</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="pcon">
+                <symbol>pcon</symbol>
+                <name language="pl">imiesłów przysłówkowy współczesny</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="ppas">
+                <symbol>ppas</symbol>
+                <name language="pl">imiesłów przymiotnikowy bierny</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="ppron12">
+                <symbol>ppron12</symbol>
+                <name language="pl">zaimek nietrzecioosobowy</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="ppron3">
+                <symbol>ppron3</symbol>
+                <name language="pl">zaimek trzecioosobowy</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="pred">
+                <symbol>pred</symbol>
+                <name language="pl">predykatyw</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl">można</example>
+                    <example language="pl">trzeba</example>
+                    <example language="pl">widać</example>
+                </examples>
+            </tag>
+            <tag id="siebie">
+                <symbol>siebie</symbol>
+                <name language="pl">zaimek "siebie"</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="bedzie">
+                <symbol>bedzie</symbol>
+                <name language="pl">forma przyszła czasownika być</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="xxs">
+                <symbol>xxs</symbol>
+                <name language="pl">ciało obce nominalne</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="xxx">
+                <symbol>xxx</symbol>
+                <name language="pl">ciało obce luźne</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+        </tags>
+    </category>
+    <category id="number">
+        <name language="pl">liczba</name>
+        <description language="pl">
+            Liczba - kategoria gramatyczna dotycząca niektórych części mowy. W języku polskim
+            kategoria liczby dotyczy rzeczownika, przymiotnika i czasownika. Współcześnie występuje
+            w polszczyźnie liczba pojedyncza i liczba mnoga, dawniej także liczba podwójna.
+        </description>
+        <name language="en">grammatical number</name>
+        <description language="en">
+            In linguistics, grammatical number is grammatical category of nouns, pronouns, 
+            and verb agreement that expresses count distinctions (such as "one" or "more than one"). 
+            The count distinctions typically, but not always, correspond to the actual count of the 
+            referents of the marked noun or pronoun.
+        </description>
+        <tags>
+            <tag id="sg">
+                <symbol>sg</symbol>
+                <name language="pl">liczba pojedyncza</name>
+                <description language="pl">
+                    Liczba pojedyncza – to szereg form fleksyjnych, tj. przypadków w deklinacji 
+                    i osób w koniugacji, oznaczających jeden przedmiot bez względu na to, czy jest 
+                    to rzeczywiście jednostka (np. mały chłopiec biegnie), czy gatunek (np. pies szczeka), 
+                    czy też zbiorowość (np. armia walczy). Nieliczne rzeczowniki mają tylko formy 
+                    liczby pojedynczej. Są to niektóre nazwy własne (np. Wisła, Bałtyk), większość 
+                    rzeczowników będących nazwami materiałów (np. miedź), wiele rzeczowników 
+                    oznaczających pojęcia oderwane (np. dobroć, radość) oraz rzeczowniki zbiorowe 
+                    (np. szlachta, sitowie)
+                </description>
+                <name language="en">singular</name>
+                <description language="en">
+                    Singular is a grammatical number, typically referring to one of the referent 
+                    in the real world. In the English language, singular and plural are the only 
+                    grammatical numbers. In English, nouns, pronouns, and demonstratives inflect 
+                    for plurality. In many other languages, for example German and the various Romance 
+                    languages, articles and adjectives also inflect for plurality. 
+                    For example, in the English sentence "The brown cats run", 
+                    only the noun and verb are inflected; but in the German sentence 
+                    "Die braunen Katzen rennen", every word (article, noun, adjective, and verb) is inflected.
+                </description>
+                <examples>
+                    <example language="pl">(jeden) dom</example>
+                    <example language="pl">(jedna) ławka</example>
+                </examples>
+            </tag>
+            <tag id="pl">
+                <symbol>pl</symbol>
+                <name language="pl">liczba mnoga</name>
+                <description language="pl">
+                    Liczba mnoga - forma fleksyjna, tj. przypadek w deklinacji i w koniugacji, 
+                    oznaczający wiele przedmiotów lub osób, a także w przypadku przedmiotów zbiorowych 
+                    - grupy tych przedmiotów (np. piasek w liczbie pojedynczej oznacza wiele ziaren 
+                    piasku, ale istnieje też forma w liczbie mnogiej - piaski - mogąca się odnosić 
+                    do większych zbiorów - np. piaski pustyni; podobnie armia to grupa ludzi, 
+                    gramatycznie liczba pojedyncza, istnieje jednak rzeczownik armie w liczbie mnogiej). 
+                    Nieliczne rzeczowniki mają tylko formy liczby mnogiej, np. "drzwi", "odrzwia", "wrota", 
+                    "ludzie", "spodnie", "majtki", "gacie", "gatki".
+                </description>
+                <name language="en">plural</name>
+                <description language="en">
+                    Plural is a grammatical number, typically referring to more than one of the referent 
+                    in the real world. In the English language, singular and plural are the only 
+                    grammatical numbers. In English, nouns, pronouns, and demonstratives inflect 
+                    for plurality. (See English plural.) In many other languages, for example 
+                    German and the various Romance languages, articles and adjectives 
+                    also inflect for plurality. For example, in the English sentence "The brown cats run", 
+                    only the noun and verb are inflected; but in the German sentence 
+                    "Die braunen Katzen rennen", every word (article, noun, adjective, and verb) is inflected.
+                </description>
+                <examples>
+                    <example language="pl">(trzy) domy</example>
+                    <example language="pl">(trzy) ławki</example>
+                </examples>
+            </tag>
+        </tags>
+    </category>
+    <category id="">
+        <name language="pl"></name>
+        <description language="pl">
+        </description>
+        <name language="en"></name>
+        <description language="en">
+        </description>
+        <tags>
+            <tag id="nom">
+                <symbol>nom</symbol>
+                <name language="pl">mianownik</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="gen">
+                <symbol>gen</symbol>
+                <name language="pl">dopełniacz</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="acc">
+                <symbol>acc</symbol>
+                <name language="pl">biernik</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="dat">
+                <symbol>dat</symbol>
+                <name language="pl">celownik</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="inst">
+                <symbol>inst</symbol>
+                <name language="pl">narzędnik</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="loc">
+                <symbol>loc</symbol>
+                <name language="pl">miejscownik</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="voc">
+                <symbol>voc</symbol>
+                <name language="pl">wołacz</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="indecl">
+                <symbol>indecl</symbol>
+                <name language="pl">forma nieodmienna</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="irreg">
+                <symbol>irreg</symbol>
+                <name language="pl">forma nieregularna (nierozpoznana dokładniej pod względem wartości atrybutów)</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+        </tags>
+    </category>
+    <category id="">
+        <name language="pl"></name>
+        <description language="pl">
+        </description>
+        <name language="en"></name>
+        <description language="en">
+        </description>
+        <tags>
+            <tag id="pos">
+                <symbol>pos</symbol>
+                <name language="pl">stopień równy</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="comp">
+                <symbol>comp</symbol>
+                <name language="pl">stopień wyższy</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="sup">
+                <symbol>sup</symbol>
+                <name language="pl">stopień najwyższy</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+        </tags>
+    </category>
+    <category id="gender">
+        <name language="pl">rodzaj</name>
+        <description language="pl">
+        </description>
+        <name language="en">gender</name>
+        <description language="en">
+        </description>
+        <tags>
+            <tag id="m">
+                <symbol>m</symbol>
+                <name language="pl">rodzaj męski</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="n">
+                <symbol>n</symbol>
+                <name language="pl">rodzaj nijaki</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="f">
+                <symbol>f</symbol>
+                <name language="pl">rodzaj żeński</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+        </tags>
+    </category>
+    <category id="osoba">
+        <name language="pl">osoba</name>
+        <description language="pl">
+        </description>
+        <name language="en">person</name>
+        <description language="en">
+        </description>
+        <tags>
+            <tag id="pri">
+                <symbol>pri</symbol>
+                <name language="pl">pierwsza osoba</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="sec">
+                <symbol>sec</symbol>
+                <name language="pl">druga osoba</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="tri">
+                <symbol>tri</symbol>
+                <name language="pl">trzecia osoba</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+        </tags>
+    </category>
+    <category id="aspect">
+        <name language="pl">aspekt</name>
+        <description language="pl">
+        </description>
+        <name language="en">aspect</name>
+        <description language="en">
+        </description>
+        <tags>
+            <tag id="perf">
+                <symbol></symbol>
+                <name language="pl">czasownik dokonany</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="imperf">
+                <symbol>imperf</symbol>
+                <name language="pl">czasownik niedokonany</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="?perf">
+                <symbol>?perf</symbol>
+                <name language="pl">czasownik nierozpoznany pod względem aspektu</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+        </tags>
+    </category>
+    <category id="negation">
+        <name language="pl">zanegowanie</name>
+        <description language="pl">
+        </description>
+        <name language="en"></name>
+        <description language="en">
+        </description>
+        <tags>
+            <tag id="aff">
+                <symbol>aff</symbol>
+                <name language="pl">forma niezanegowana</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="neg">
+                <symbol>neg</symbol>
+                <name language="pl">forma zanegowana</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+        </tags>
+    </category>
+    <category id="after-prepostion">
+        <name language="pl">poprzyimkowość</name>
+        <description language="pl">
+        </description>
+        <name language="en"></name>
+        <description language="en">
+        </description>
+        <tags>
+            <tag id="praep">
+                <symbol>praep</symbol>
+                <name language="pl">forma poprzyimkowa</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="npraep">
+                <symbol>npraep</symbol>
+                <name language="pl">forma niepoprzyimkowa</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+        </tags>
+    </category>
+    <category id="stress">
+        <name language="pl">akcentowość</name>
+        <description language="pl">
+        </description>
+        <name language="en">stress</name>
+        <description language="en">
+        </description>
+        <tags>
+            <tag id="akc">
+                <symbol>akc</symbol>
+                <name language="pl">forma akcentowana</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="nakc">
+                <symbol>nakc</symbol>
+                <name language="pl">form nieakcentowana</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+        </tags>
+    </category>
+    <category id="verb-form">
+        <name language="pl">forma czasownika</name>
+        <description language="pl">
+        </description>
+        <name language="en">verb-form</name>
+        <description language="en">
+        </description>
+        <tags>
+            <tag id="fin">
+                <symbol>fin</symbol>
+                <name language="pl">forma nieprzeszła czasownika</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="praet">
+                <symbol>praet</symbol>
+                <name language="pl">forma przeszła czasownika (pseudoimiesłów)</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="impt">
+                <symbol>impt</symbol>
+                <name language="pl">tryb rozkazujący czasownika</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="imps">
+                <symbol>forma bezosobowa czasownika</symbol>
+                <name language="pl"></name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+            <tag id="inf">
+                <symbol>inf</symbol>
+                <name language="pl">bezokolicznik</name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+        </tags>
+    </category>
+    
+<!--    
+    <category id="">
+        <name language="pl"></name>
+        <description language="pl">
+        </description>
+        <name language="en"></name>
+        <description language="en">
+        </description>
+        <tags>
+            <tag id="">
+                <symbol></symbol>
+                <name language="pl"></name>
+                <description language="pl">
+                    
+                </description>
+                <name language="en"></name>
+                <description language="en">
+                    
+                </description>
+                <examples>
+                    <example language="pl"></example>
+                    <example language="pl"></example>
+                </examples>
+            </tag>
+        </tags>
+    </category>
+-->    
+    
+    <!--    
+
+Atrybuty podstawowych form:
+
+
+
+refl - forma zwrotna czasownika [nie wyst�puje w znacznikach IPI]
+pot - tryb przypuszczaj�cy [nie wyst�puje w znacznikach IPI]
+    -->
+</tagset>

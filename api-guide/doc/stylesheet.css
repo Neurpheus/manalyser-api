@@ -1,0 +1,127 @@
+  A:visited
+  {
+    COLOR: blue;
+  }  
+  
+  A:hover
+  {
+    COLOR: red;
+  }  
+  
+  CODE.classdeclaration
+  {
+    FONT-size: 1.0em;
+    FONT-WEIGHT: bold;
+  }   
+  
+  CODE.innerclassdeclaration
+  {
+    FONT-WEIGHT: bold;
+  }   
+  
+  DIV.classdeclaration
+  {
+    MARGIN-TOP: 0.8em;
+    MARGIN-LEFT: 1em;
+    MARGIN-BOTTOM: 0.0em;
+  }   
+  
+  DIV.innerclassdeclaration
+  {
+    MARGIN-TOP: 0.2em;
+    MARGIN-LEFT: 1em;
+    MARGIN-BOTTOM: 0.0em;
+  }   
+  
+  FONT.comment 
+  {
+    COLOR: #009900;
+  }
+  
+  H1 
+  {
+    COLOR: green;
+  }
+  
+  H2 
+  {
+    COLOR:         green; 
+    MARGIN-TOP:    1em; 
+    MARGIN-BOTTOM: 0.2em;
+  }
+  
+  H2.nomargin
+  {
+    MARGIN: 0.0em;
+  }
+      
+  H3
+  {
+    MARGIN-TOP:    1em; 
+    MARGIN-BOTTOM: 0.1em;
+  }
+  
+  SPAN.docnavlinks
+  {
+    FONT-SIZE: 14px; 
+    FONT-WEIGHT: normal;
+    TEXT-DECORATION: none;
+  }   
+  
+  SPAN.abstract
+  {
+    COLOR: red;
+  }   
+  
+  SPAN.final
+  {
+    FONT-WEIGHT: BOLD; 
+  }   
+  
+  SPAN.static
+  {
+    COLOR: #CC00CC;
+    FONT-WEIGHT: 1.2em;
+  }   
+  
+  TABLE.member 
+  {
+    WIDTH:      94%; 
+    MARGIN-TOP: 10px;
+  }
+  
+  TABLE.summary 
+  {
+    WIDTH:      98%; 
+    MARGIN-TOP: 10px;
+  }
+  
+  TR.member_title 
+  {
+    BACKGROUND-COLOR: #C0FFC0; 
+    font-weight:      bold; 
+    font-size:        medium;
+    MARGIN:           0px;
+  }
+  
+  TR.summary_title 
+  {
+    BACKGROUND-COLOR: #CCCCFF; 
+    font-weight:      bold; 
+    font-size:        large;
+    MARGIN:           0px;
+  }
+  
+  
+  /* Not supported by most browsers. */
+  TABLE 
+  {
+    WIDOWS: 4; 
+    ORPHANS: 4;
+  }
+  
+  @PAGE 
+  {
+    MARGIN: .5in;
+  }
+    

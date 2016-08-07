@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>DTD Grammar Documentation</title>
+<meta http-equiv="Content-Type" content="text/xhtml; charset=UTF-8" />
+</head>
+
+<!-- Generated on 2008-04-11 by NetBeans XML module. -->
+<body>
+
+<hr />
+<h2>Element Index</h2>
+<ul><li><tt><a href="#category">category</a></tt></li>
+<li><tt><a href="#description">description</a></tt></li>
+<li><tt><a href="#example">example</a></tt></li>
+<li><tt><a href="#lang">lang</a></tt></li>
+<li><tt><a href="#language">language</a></tt></li>
+<li><tt><a href="#name">name</a></tt></li>
+<li><tt><a href="#symbol">symbol</a></tt></li>
+<li><tt><a href="#tag">tag</a></tt></li>
+<li><tt><a href="#tagset">tagset</a></tt></li>
+<li><tt><a href="#value">value</a></tt></li>
+</ul>
+
+<hr />
+<h2>Element Details</h2>
+
+
+<hr />
+<h2><a name="tagset"></a>tagset</h2>
+<div>Root element of the tagset definition.</div>
+<p><b>Declared Attributes</b></p>
+<ul><li><tt>#IMPLIED CDATA xmlns</tt></li>
+</ul>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#language">language</a>*, <a href="#category">category</a>*)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt></tt></p>
+
+
+<hr />
+<h2><a name="language"></a>language</h2>
+<div>Describes one of the language used in documents. Language can have many symbols and names.</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#symbol">symbol</a>+, <a href="#name">name</a>*)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#tagset">tagset</a></tt></p>
+
+
+<hr />
+<h2><a name="symbol"></a>symbol</h2>
+<div>A symbol of a language, a tag, a category and so on.</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#language">language</a>, <a href="#category">category</a>, <a href="#tag">tag</a></tt></p>
+
+
+<hr />
+<h2><a name="value"></a>value</h2>
+<div>A value of name, description and so on</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#name">name</a>, <a href="#description">description</a>, <a href="#example">example</a></tt></p>
+
+
+<hr />
+<h2><a name="lang"></a>lang</h2>
+<div>A value of name, description and so on</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(#PCDATA)*</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#name">name</a>, <a href="#description">description</a>, <a href="#example">example</a></tt></p>
+
+
+<hr />
+<h2><a name="name"></a>name</h2>
+<div>Name of a tag or a grammatical category written in the specified language.</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#lang">lang</a>, <a href="#value">value</a>)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#language">language</a>, <a href="#category">category</a>, <a href="#tag">tag</a></tt></p>
+
+
+<hr />
+<h2><a name="category"></a>category</h2>
+<div>Describes a grammatical category. The category can have symbol, many names, descriptions, and tags.</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#symbol">symbol</a>, <a href="#name">name</a>*, <a href="#description">description</a>*, <a href="#tag">tag</a>*)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#tagset">tagset</a></tt></p>
+
+
+<hr />
+<h2><a name="description"></a>description</h2>
+<div>Describes a grammatical category or a tag in the specified language.</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#lang">lang</a>, <a href="#value">value</a>)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#category">category</a>, <a href="#tag">tag</a></tt></p>
+
+
+<hr />
+<h2><a name="tag"></a>tag</h2>
+<div>A tag representing a grammatical property. Each tag can be specified using many symbols, examples, descriptions and names.</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#symbol">symbol</a>, <a href="#name">name</a>*, <a href="#description">description</a>*, <a href="#example">example</a>*)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#category">category</a></tt></p>
+
+
+<hr />
+<h2><a name="example"></a>example</h2>
+<div>An example word form written in a given language.</div>
+<p><b>Element Content Model</b></p>
+<p><tt>(<a href="#lang">lang</a>, <a href="#value">value</a>)</tt></p>
+<p><b>Referenced by</b></p>
+<p><tt><a href="#tag">tag</a></tt></p>
+</body></html>

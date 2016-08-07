@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1250">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 2.3  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="Jakub Strychowski">
+	<META NAME="CHANGED" CONTENT="20080330;16243968">
+</HEAD>
+<BODY LANG="en-GB" DIR="LTR">
+<P><B>Grammatical properties, tagsets, grammatical categories, grammatical tags</B>. 
+</P>
+<P>This package contains classes defining tagsets used by
+morphological analysers and word form generators. Any tagset can be
+represented by the {@link org.neurpheus.nlp.morphology.tagset.Tagset} interface. 
+A tagset consist of set of grammatical categories. Each grammatical 
+category consist of a list of grammatical tags representing grammatical properties. 
+</P>
+<P>A result of morphological analysis contains information about
+grammatical properties of an analysed form. These properties can be
+represented by a mark symbol (list of tag symbols separated by the
+':' character) or an instance of the GrammaticalProperties class.
+This class enables to get list of tags describing grammatical
+properties and also enables to check if the grammatical properties
+are described by any grammatical tag.</P>
+<P>The following diagram shows all interfaces related to the
+tagsets. 
+</P>
+<P ALIGN=CENTER><IMG SRC="doc-files/tagset-model.png" NAME="graphics1" ALIGN=BOTTOM WIDTH=863 HEIGHT=468 BORDER=0>
+</P>
+<P>In most cases a tagset is read from an XML file by the
+{@link org.neurpheus.nlp.morphology.tagset.Tagset#readFromXML(InputStream)} method. An empty tagset can be
+created by the
+{@link org.neurpheus.nlp.morphology.MorphologyFactory#createTagset()}.</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm">Copyright &copy; 2006-2008
+Jakub Strychowski, <FONT COLOR="#800000"><FONT SIZE=3><B>NeurPheus</B></FONT></FONT>
+(<A HREF="http://neurpheus.org/" TARGET="_top">neurpheus.org</A>) 
+</P>
+<P ALIGN=LEFT><IMG SRC="doc-files/lgplv3-147x51.png" NAME="graphics2" ALT="LGPL Logo" ALIGN=LEFT WIDTH=147 HEIGHT=51 BORDER=0><IMG SRC="doc-files/neurpheus_small.PNG" NAME="graphics3" ALT="Neurpheus Logo" ALIGN=RIGHT WIDTH=47 HEIGHT=48 BORDER=0><FONT SIZE=1>This
+library is free software; you can redistribute it and/or modify it
+under the terms of the <B>GNU Lesser General Public License</B> as
+published by the Free Software Foundation; either version 3 of the
+License, or (at your option) any later version. This library is
+distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public
+License for more details. You should have received a copy of the GNU
+Lesser General Public License along with this program; if not, write
+to the Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+Boston, MA 02111-1307, USA. </FONT>
+</P>
+</BODY>
+</HTML>
