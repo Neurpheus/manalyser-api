@@ -8,7 +8,6 @@ package org.neurpheus.nlp.morphology.baseimpl;
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -346,11 +345,17 @@ public class TagsetImplTest extends TestCase {
     }
     
     public void testPolishTagset() throws Exception {
+        System.out.println("testPolishTagset");
         TagsetImpl tagset = new TagsetImpl();
-        String path = "N:\\data\\polish.tags.xml";
-        InputStream in = new BufferedInputStream(new FileInputStream(new File(path)));
-        tagset.readFromXML(in);
-        in.close();
+        String path = "/polish.tags.xml";
+        try (
+                InputStream in = new BufferedInputStream(
+                        new FileInputStream(this.getClass().getResource(path).getFile()))) {
+            tagset.readFromXML(in);
+            in.close();
+        } catch (Exception ex) {
+            fail(ex.getMessage());
+        }
     }
 
 }

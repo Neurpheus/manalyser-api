@@ -401,6 +401,7 @@ public class MorphologicalAnalysisResultImplTest extends TestCase {
 
         byte[] data = baos.toByteArray();
         
+        TagsetImpl.setDeserializationTagset(tagset);
         ByteArrayInputStream bais = new ByteArrayInputStream(data);
         ObjectInputStream ois = new ObjectInputStream(bais);
         

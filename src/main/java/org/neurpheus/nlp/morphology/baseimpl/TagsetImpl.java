@@ -58,7 +58,7 @@ public class TagsetImpl implements Tagset {
     /** Identifier of this class. */
     protected static final long serialVersionUID = -770608080319234446L;
     
-    private static Tagset deserializationTagset;
+    private static final ThreadLocal<Tagset> deserializationTagset = new ThreadLocal<>();
     
     /** The grammatical categories. */
     private Map categories;
@@ -458,11 +458,11 @@ public class TagsetImpl implements Tagset {
     }
 
     public static Tagset getDeserializationTagset() {
-        return deserializationTagset;
+        return deserializationTagset.get();
     }
     
     public static void setDeserializationTagset(final Tagset tagset) {
-        deserializationTagset = tagset;
+        deserializationTagset.set(tagset);
     }
     
     public static Object getDeserializationLockObject() {

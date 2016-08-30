@@ -1,0 +1,2548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE tagset SYSTEM "tagset.dtd">-->
+<!--
+	Defines a polish tagset used by the Neurpheus Morhological Analyser.
+
+		creation-date : 14 September 2007
+		created-by: Jakub Strychowski
+		modified-by: Jakub Strychowski
+		modification-date: 05 April 2008
+
+	The tagset bases on a tagset used by the Morfologik project  (http://morfologik.blogspot.com/) 
+	which is derived from the IPI PAN tagset  (http://www.korpus.pl/pl/cheatsheet/node2.html).
+	Marcin Woliński describes the IPI PAN tagset in the following article:
+		[Woliński]  Marcin Woliński. (2003). 
+                            System znaczników morfosyntaktycznych w korpusie IPI PAN. 
+                            Polonica XXII-XXIII, pp. 39-55, the second article in a series of 
+                            four Polonica articles about the IPI PAN corpus. 
+	Some concepts regarding the tagset where introduced by Jan Bień:
+		[Bien]      J . S . Bi e n (1991) 
+                            Koncepcja słownikowej informacji morfologicznej i jej komputerowej weryfikacji, 
+                            Rozprawy Uniwersytetu Warszawskiego, Wydawnictwa Uniwersytetu Warszawskiego.				
+    
+	Descriptions of categories and tags have been taken from the Wikipedia :
+		http://pl.wikipedia.org/ 
+		http://en.wikipedia.org/
+		http://pl.wikipedia.org/wiki/Kategoria:Morfologia
+		http://en.wikipedia.org/wiki/Category:Linguistic_morphology	
+    
+    This xml file is distribued under the GNU Free Documentation License
+
+    License begin:
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+			GNU Free Documentation License
+			   Version 1.2, November 2002
+			   
+	  Copyright (C) 2000,2001,2002  Free Software Foundation, Inc.
+		 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+	 Everyone is permitted to copy and distribute verbatim copies
+	 of this license document, but changing it is not allowed.   
+
+	0. PREAMBLE
+
+	The purpose of this License is to make a manual, textbook, or other
+	functional and useful document "free" in the sense of freedom: to
+	assure everyone the effective freedom to copy and redistribute it,
+	with or without modifying it, either commercially or noncommercially.
+	Secondarily, this License preserves for the author and publisher a way
+	to get credit for their work, while not being considered responsible
+	for modifications made by others.
+
+	This License is a kind of "copyleft", which means that derivative
+	works of the document must themselves be free in the same sense.  It
+	complements the GNU General Public License, which is a copyleft
+	license designed for free software.
+
+	We have designed this License in order to use it for manuals for free
+	software, because free software needs free documentation: a free
+	program should come with manuals providing the same freedoms that the
+	software does.  But this License is not limited to software manuals;
+	it can be used for any textual work, regardless of subject matter or
+	whether it is published as a printed book.  We recommend this License
+	principally for works whose purpose is instruction or reference.
+
+
+	1. APPLICABILITY AND DEFINITIONS
+
+	This License applies to any manual or other work, in any medium, that
+	contains a notice placed by the copyright holder saying it can be
+	distributed under the terms of this License.  Such a notice grants a
+	world-wide, royalty-free license, unlimited in duration, to use that
+	work under the conditions stated herein.  The "Document", below,
+	refers to any such manual or work.  Any member of the public is a
+	licensee, and is addressed as "you".  You accept the license if you
+	copy, modify or distribute the work in a way requiring permission
+	under copyright law.
+
+	A "Modified Version" of the Document means any work containing the
+	Document or a portion of it, either copied verbatim, or with
+	modifications and/or translated into another language.
+
+	A "Secondary Section" is a named appendix or a front-matter section of
+	the Document that deals exclusively with the relationship of the
+	publishers or authors of the Document to the Document's overall subject
+	(or to related matters) and contains nothing that could fall directly
+	within that overall subject.  (Thus, if the Document is in part a
+	textbook of mathematics, a Secondary Section may not explain any
+	mathematics.)  The relationship could be a matter of historical
+	connection with the subject or with related matters, or of legal,
+	commercial, philosophical, ethical or political position regarding
+	them.
+
+	The "Invariant Sections" are certain Secondary Sections whose titles
+	are designated, as being those of Invariant Sections, in the notice
+	that says that the Document is released under this License.  If a
+	section does not fit the above definition of Secondary then it is not
+	allowed to be designated as Invariant.  The Document may contain zero
+	Invariant Sections.  If the Document does not identify any Invariant
+	Sections then there are none.
+
+	The "Cover Texts" are certain short passages of text that are listed,
+	as Front-Cover Texts or Back-Cover Texts, in the notice that says that
+	the Document is released under this License.  A Front-Cover Text may
+	be at most 5 words, and a Back-Cover Text may be at most 25 words.
+
+	A "Transparent" copy of the Document means a machine-readable copy,
+	represented in a format whose specification is available to the
+	general public, that is suitable for revising the document
+	straightforwardly with generic text editors or (for images composed of
+	pixels) generic paint programs or (for drawings) some widely available
+	drawing editor, and that is suitable for input to text formatters or
+	for automatic translation to a variety of formats suitable for input
+	to text formatters.  A copy made in an otherwise Transparent file
+	format whose markup, or absence of markup, has been arranged to thwart
+	or discourage subsequent modification by readers is not Transparent.
+	An image format is not Transparent if used for any substantial amount
+	of text.  A copy that is not "Transparent" is called "Opaque".
+
+	Examples of suitable formats for Transparent copies include plain
+	ASCII without markup, Texinfo input format, LaTeX input format, SGML
+	or XML using a publicly available DTD, and standard-conforming simple
+	HTML, PostScript or PDF designed for human modification.  Examples of
+	transparent image formats include PNG, XCF and JPG.  Opaque formats
+	include proprietary formats that can be read and edited only by
+	proprietary word processors, SGML or XML for which the DTD and/or
+	processing tools are not generally available, and the
+	machine-generated HTML, PostScript or PDF produced by some word
+	processors for output purposes only.
+
+	The "Title Page" means, for a printed book, the title page itself,
+	plus such following pages as are needed to hold, legibly, the material
+	this License requires to appear in the title page.  For works in
+	formats which do not have any title page as such, "Title Page" means
+	the text near the most prominent appearance of the work's title,
+	preceding the beginning of the body of the text.
+
+	A section "Entitled XYZ" means a named subunit of the Document whose
+	title either is precisely XYZ or contains XYZ in parentheses following
+	text that translates XYZ in another language.  (Here XYZ stands for a
+	specific section name mentioned below, such as "Acknowledgements",
+	"Dedications", "Endorsements", or "History".)  To "Preserve the Title"
+	of such a section when you modify the Document means that it remains a
+	section "Entitled XYZ" according to this definition.
+
+	The Document may include Warranty Disclaimers next to the notice which
+	states that this License applies to the Document.  These Warranty
+	Disclaimers are considered to be included by reference in this
+	License, but only as regards disclaiming warranties: any other
+	implication that these Warranty Disclaimers may have is void and has
+	no effect on the meaning of this License.
+
+
+	2. VERBATIM COPYING
+
+	You may copy and distribute the Document in any medium, either
+	commercially or noncommercially, provided that this License, the
+	copyright notices, and the license notice saying this License applies
+	to the Document are reproduced in all copies, and that you add no other
+	conditions whatsoever to those of this License.  You may not use
+	technical measures to obstruct or control the reading or further
+	copying of the copies you make or distribute.  However, you may accept
+	compensation in exchange for copies.  If you distribute a large enough
+	number of copies you must also follow the conditions in section 3.
+
+	You may also lend copies, under the same conditions stated above, and
+	you may publicly display copies.
+
+
+	3. COPYING IN QUANTITY
+
+	If you publish printed copies (or copies in media that commonly have
+	printed covers) of the Document, numbering more than 100, and the
+	Document's license notice requires Cover Texts, you must enclose the
+	copies in covers that carry, clearly and legibly, all these Cover
+	Texts: Front-Cover Texts on the front cover, and Back-Cover Texts on
+	the back cover.  Both covers must also clearly and legibly identify
+	you as the publisher of these copies.  The front cover must present
+	the full title with all words of the title equally prominent and
+	visible.  You may add other material on the covers in addition.
+	Copying with changes limited to the covers, as long as they preserve
+	the title of the Document and satisfy these conditions, can be treated
+	as verbatim copying in other respects.
+
+	If the required texts for either cover are too voluminous to fit
+	legibly, you should put the first ones listed (as many as fit
+	reasonably) on the actual cover, and continue the rest onto adjacent
+	pages.
+
+	If you publish or distribute Opaque copies of the Document numbering
+	more than 100, you must either include a machine-readable Transparent
+	copy along with each Opaque copy, or state in or with each Opaque copy
+	a computer-network location from which the general network-using
+	public has access to download using public-standard network protocols
+	a complete Transparent copy of the Document, free of added material.
+	If you use the latter option, you must take reasonably prudent steps,
+	when you begin distribution of Opaque copies in quantity, to ensure
+	that this Transparent copy will remain thus accessible at the stated
+	location until at least one year after the last time you distribute an
+	Opaque copy (directly or through your agents or retailers) of that
+	edition to the public.
+
+	It is requested, but not required, that you contact the authors of the
+	Document well before redistributing any large number of copies, to give
+	them a chance to provide you with an updated version of the Document.
+
+
+	4. MODIFICATIONS
+
+	You may copy and distribute a Modified Version of the Document under
+	the conditions of sections 2 and 3 above, provided that you release
+	the Modified Version under precisely this License, with the Modified
+	Version filling the role of the Document, thus licensing distribution
+	and modification of the Modified Version to whoever possesses a copy
+	of it.  In addition, you must do these things in the Modified Version:
+
+	A. Use in the Title Page (and on the covers, if any) a title distinct
+	   from that of the Document, and from those of previous versions
+	   (which should, if there were any, be listed in the History section
+	   of the Document).  You may use the same title as a previous version
+	   if the original publisher of that version gives permission.
+	B. List on the Title Page, as authors, one or more persons or entities
+	   responsible for authorship of the modifications in the Modified
+	   Version, together with at least five of the principal authors of the
+	   Document (all of its principal authors, if it has fewer than five),
+	   unless they release you from this requirement.
+	C. State on the Title page the name of the publisher of the
+	   Modified Version, as the publisher.
+	D. Preserve all the copyright notices of the Document.
+	E. Add an appropriate copyright notice for your modifications
+	   adjacent to the other copyright notices.
+	F. Include, immediately after the copyright notices, a license notice
+	   giving the public permission to use the Modified Version under the
+	   terms of this License, in the form shown in the Addendum below.
+	G. Preserve in that license notice the full lists of Invariant Sections
+	   and required Cover Texts given in the Document's license notice.
+	H. Include an unaltered copy of this License.
+	I. Preserve the section Entitled "History", Preserve its Title, and add
+	   to it an item stating at least the title, year, new authors, and
+	   publisher of the Modified Version as given on the Title Page.  If
+	   there is no section Entitled "History" in the Document, create one
+	   stating the title, year, authors, and publisher of the Document as
+	   given on its Title Page, then add an item describing the Modified
+	   Version as stated in the previous sentence.
+	J. Preserve the network location, if any, given in the Document for
+	   public access to a Transparent copy of the Document, and likewise
+	   the network locations given in the Document for previous versions
+	   it was based on.  These may be placed in the "History" section.
+	   You may omit a network location for a work that was published at
+	   least four years before the Document itself, or if the original
+	   publisher of the version it refers to gives permission.
+	K. For any section Entitled "Acknowledgements" or "Dedications",
+	   Preserve the Title of the section, and preserve in the section all
+	   the substance and tone of each of the contributor acknowledgements
+	   and/or dedications given therein.
+	L. Preserve all the Invariant Sections of the Document,
+	   unaltered in their text and in their titles.  Section numbers
+	   or the equivalent are not considered part of the section titles.
+	M. Delete any section Entitled "Endorsements".  Such a section
+	   may not be included in the Modified Version.
+	N. Do not retitle any existing section to be Entitled "Endorsements"
+	   or to conflict in title with any Invariant Section.
+	O. Preserve any Warranty Disclaimers.
+
+	If the Modified Version includes new front-matter sections or
+	appendices that qualify as Secondary Sections and contain no material
+	copied from the Document, you may at your option designate some or all
+	of these sections as invariant.  To do this, add their titles to the
+	list of Invariant Sections in the Modified Version's license notice.
+	These titles must be distinct from any other section titles.
+
+	You may add a section Entitled "Endorsements", provided it contains
+	nothing but endorsements of your Modified Version by various
+	parties - for example, statements of peer review or that the text has
+	been approved by an organization as the authoritative definition of a
+	standard.
+
+	You may add a passage of up to five words as a Front-Cover Text, and a
+	passage of up to 25 words as a Back-Cover Text, to the end of the list
+	of Cover Texts in the Modified Version.  Only one passage of
+	Front-Cover Text and one of Back-Cover Text may be added by (or
+	through arrangements made by) any one entity.  If the Document already
+	includes a cover text for the same cover, previously added by you or
+	by arrangement made by the same entity you are acting on behalf of,
+	you may not add another; but you may replace the old one, on explicit
+	permission from the previous publisher that added the old one.
+
+	The author(s) and publisher(s) of the Document do not by this License
+	give permission to use their names for publicity for or to assert or
+	imply endorsement of any Modified Version.
+
+
+	5. COMBINING DOCUMENTS
+
+	You may combine the Document with other documents released under this
+	License, under the terms defined in section 4 above for modified
+	versions, provided that you include in the combination all of the
+	Invariant Sections of all of the original documents, unmodified, and
+	list them all as Invariant Sections of your combined work in its
+	license notice, and that you preserve all their Warranty Disclaimers.
+
+	The combined work need only contain one copy of this License, and
+	multiple identical Invariant Sections may be replaced with a single
+	copy.  If there are multiple Invariant Sections with the same name but
+	different contents, make the title of each such section unique by
+	adding at the end of it, in parentheses, the name of the original
+	author or publisher of that section if known, or else a unique number.
+	Make the same adjustment to the section titles in the list of
+	Invariant Sections in the license notice of the combined work.
+
+	In the combination, you must combine any sections Entitled "History"
+	in the various original documents, forming one section Entitled
+	"History"; likewise combine any sections Entitled "Acknowledgements",
+	and any sections Entitled "Dedications".  You must delete all sections
+	Entitled "Endorsements".
+
+
+	6. COLLECTIONS OF DOCUMENTS
+
+	You may make a collection consisting of the Document and other documents
+	released under this License, and replace the individual copies of this
+	License in the various documents with a single copy that is included in
+	the collection, provided that you follow the rules of this License for
+	verbatim copying of each of the documents in all other respects.
+
+	You may extract a single document from such a collection, and distribute
+	it individually under this License, provided you insert a copy of this
+	License into the extracted document, and follow this License in all
+	other respects regarding verbatim copying of that document.
+
+
+	7. AGGREGATION WITH INDEPENDENT WORKS
+
+	A compilation of the Document or its derivatives with other separate
+	and independent documents or works, in or on a volume of a storage or
+	distribution medium, is called an "aggregate" if the copyright
+	resulting from the compilation is not used to limit the legal rights
+	of the compilation's users beyond what the individual works permit.
+	When the Document is included in an aggregate, this License does not
+	apply to the other works in the aggregate which are not themselves
+	derivative works of the Document.
+
+	If the Cover Text requirement of section 3 is applicable to these
+	copies of the Document, then if the Document is less than one half of
+	the entire aggregate, the Document's Cover Texts may be placed on
+	covers that bracket the Document within the aggregate, or the
+	electronic equivalent of covers if the Document is in electronic form.
+	Otherwise they must appear on printed covers that bracket the whole
+	aggregate.
+
+
+	8. TRANSLATION
+
+	Translation is considered a kind of modification, so you may
+	distribute translations of the Document under the terms of section 4.
+	Replacing Invariant Sections with translations requires special
+	permission from their copyright holders, but you may include
+	translations of some or all Invariant Sections in addition to the
+	original versions of these Invariant Sections.  You may include a
+	translation of this License, and all the license notices in the
+	Document, and any Warranty Disclaimers, provided that you also include
+	the original English version of this License and the original versions
+	of those notices and disclaimers.  In case of a disagreement between
+	the translation and the original version of this License or a notice
+	or disclaimer, the original version will prevail.
+
+	If a section in the Document is Entitled "Acknowledgements",
+	"Dedications", or "History", the requirement (section 4) to Preserve
+	its Title (section 1) will typically require changing the actual
+	title.
+
+
+	9. TERMINATION
+
+	You may not copy, modify, sublicense, or distribute the Document except
+	as expressly provided for under this License.  Any other attempt to
+	copy, modify, sublicense or distribute the Document is void, and will
+	automatically terminate your rights under this License.  However,
+	parties who have received copies, or rights, from you under this
+	License will not have their licenses terminated so long as such
+	parties remain in full compliance.
+
+
+	10. FUTURE REVISIONS OF THIS LICENSE
+
+	The Free Software Foundation may publish new, revised versions
+	of the GNU Free Documentation License from time to time.  Such new
+	versions will be similar in spirit to the present version, but may
+	differ in detail to address new problems or concerns.  See
+	http://www.gnu.org/copyleft/.
+
+	Each version of the License is given a distinguishing version number.
+	If the Document specifies that a particular numbered version of this
+	License "or any later version" applies to it, you have the option of
+	following the terms and conditions either of that specified version or
+	of any later version that has been published (not as a draft) by the
+	Free Software Foundation.  If the Document does not specify a version
+	number of this License, you may choose any version ever published (not
+	as a draft) by the Free Software Foundation.
+
+
+	ADDENDUM: How to use this License for your documents
+
+	To use this License in a document you have written, include a copy of
+	the License in the document and put the following copyright and
+	license notices just after the title page:
+
+		Copyright (c)  YEAR  YOUR NAME.
+		Permission is granted to copy, distribute and/or modify this document
+		under the terms of the GNU Free Documentation License, Version 1.2
+		or any later version published by the Free Software Foundation;
+		with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+		A copy of the license is included in the section entitled "GNU
+		Free Documentation License".
+
+	If you have Invariant Sections, Front-Cover Texts and Back-Cover Texts,
+	replace the "with...Texts." line with this:
+
+		with the Invariant Sections being LIST THEIR TITLES, with the
+		Front-Cover Texts being LIST, and with the Back-Cover Texts being LIST.
+
+	If you have Invariant Sections without Cover Texts, or some other
+	combination of the three, merge those two alternatives to suit the
+	situation.
+
+	If your document contains nontrivial examples of program code, we
+	recommend releasing these examples in parallel under your choice of
+	free software license, such as the GNU General Public License,
+	to permit their use in free software.	
+    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    License end:
+-->    
+<tagset>
+    <language>
+        <symbol>pl</symbol>
+        <name>
+            <lang>pl</lang>
+            <value>język polski</value>
+        </name>
+        <name>
+            <lang>en</lang>
+            <value>polish language</value>
+        </name>
+    </language>
+    
+    <category>
+        <symbol>part-of-speech</symbol>
+        <name>
+            <lang>pl</lang>
+            <value>część mowy - fleksem</value>
+        </name>
+        <name>
+            <lang>en</lang>
+            <value>part of speech - flexem</value>
+        </name>
+        <description>
+            <lang>pl</lang>
+<value>
+Część mowy to specyficzna dla danego języka, wyróżniona głównie na podstawie kryteriów
+składniowych i fleksyjnych klasa wyrazów. Nie istnieją żadne "uniwersalne" części mowy, 
+które istniałyby w każdym języku, i - choć często dla "podobnych" klas różnych języków
+używa się tej samej nazwy, np. "rzeczownik" w języku polskim i w języku angielskim - są to
+jednak zupełnie różne twory. Nie ma więc sensu mówienie o ogólnych właściwościach 
+"rzeczownika", gdyż taki twór po prostu nie istnieje. Co więcej dla danego języka istnieć 
+może wiele bardzo różnych od siebie klasyfikacji części mowy. Po pierwsze nie jest jasne 
+rozróżnienie między pełną "częścią mowy" a jedną z form jakiejś innej części - np. przysłówek 
+odprzymiotnikowy w języku angielskim można traktować jako część mowy lub też jako formę 
+przymiotnika. Drugim dużym problemem jest niejasne pojęcie wyrazu - wyraz w przeciwieństwie 
+do dość dobrze ustalonego morfemu jest pojęciem dość dowolnym, więc przyjęcie różnych 
+definicji wyrazu prowadzi do różnych części mowy. Można też określać części mowy na samych 
+morfemach, co prowadzi do bardzo specyficznych klasyfikacji.            
+
+"W przedstawionej tu koncepcji proponuje sie konstrukcje leksemów na podstawie faktycznej
+regularnosci odmiany, a dopiero na drugim miejscu na podstawie własnosci składniowych.
+Do tego celu uzyteczna jest posrednia jednostka klasyfikacji, grupujaca formy,
+które sa nieobojetne ze wzgledu na te same kategorie fleksyjne. Jednostke taka zaproponował
+Jan Bień [Bien] nazywajac ja fleksemem." [Woliński]
+</value>
+        </description>
+        <description>
+            <lang>en</lang>
+<value>
+In grammar, a lexical category (also word class, lexical class, or in traditional grammar 
+part of speech) is a linguistic category of words (or more precisely lexical items), 
+which is generally defined by the syntactic or morphological behaviour of the lexical 
+item in question. Common linguistic categories include noun and verb, among others. 
+There are open word classes, which constantly acquire new members, and closed word classes, 
+which acquire new members infrequently if at all.
+Different languages may have different lexical categories, or they might associate 
+different properties to the same one. For example, Spanish uses adjectives almost 
+interchangeably as nouns while English cannot. Japanese has two classes of adjectives 
+where English has one; Chinese and Japanese have measure words while European languages 
+have nothing resembling them; many languages don't have a distinction between adjectives 
+and adverbs, or adjectives and nouns, etc. Many linguists argue that the formal 
+distinctions between parts of speech must be made within the framework of a specific 
+language or language family, and should not be carried over to other languages or 
+language families.
+</value>
+        </description>
+        
+        <tag>
+            <symbol>adj</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>przymiotnik</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>adjective</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Przymiotnik to część mowy określająca cechy i właściwości ludzi, zwierząt, roślin, 
+rzeczy, zjawisk. W językach indoeuropejskich przymiotniki są zwykle odmienne przez 
+liczby, rodzaje, a często też przypadki, podlegają stopniowaniu. Przymiotnik może 
+w nich też pełnić funkcję rzeczownika. ("Robin Hood zabierał bogatym i dawał 
+biednym" - przymiotniki "bogatym" i "biednym" użyte w roli rzeczowników). Problemem 
+na szerszą skalę jest używanie błędnych form przymiotnikowych w stopniu wyższym i 
+czasem także najwyższym.                    
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In grammar, an adjective is a word whose main syntactic role is to modify a noun or 
+pronoun (called the adjective's subject), giving more information about what the noun
+or pronoun refers to. Collectively, adjectives form one of the traditional eight parts
+of speech, though linguists today distinguish adjectives from words such as determiners
+that used to be considered adjectives but that are now recognized to be different. 
+Not all languages have adjectives, but most, including English, do. (English adjectives
+include big, old, and tired, among many others.) Those that don't typically use words
+of another part of speech, often verbs, to serve the same semantic function; 
+for example, such a language might have a verb that means "to be big", and would use 
+a construction analogous to "big-being house" to express what English expresses 
+as "big house". Even in languages that do have adjectives, one language's adjective 
+might not be another's; for example, where English has "to be hungry" (hungry being 
+an adjective), French has "avoir faim" (literally "to have hunger"), and where 
+Hebrew has the adjective "זקוק" (zaqūq, roughly "in need of"), English uses the 
+verb "to need". In most languages with adjectives, they form an open class of words;
+that is, it is relatively common for new adjectives to be formed via such processes 
+as derivation.                    
+</value>
+            </description>
+            <example><lang>pl</lang><value>wysoki</value></example>
+            <example><lang>pl</lang><value>niski</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>subst</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>rzeczownik</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>noun</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Rzeczownik – część mowy nazywająca rzeczy, obiekty, osoby, rośliny, zwierzęta, zjawiska, 
+pojęcia abstrakcyjne, prymarnie pełniąca funkcję podmiotu w zdaniu. Rzeczowniki w języku 
+polskim mogą odmieniać się przez liczby i przypadki. Odmianę rzeczowników nazywamy 
+deklinacją. W większości języków istnieje jakiś system klasyfikacji rzeczowników. 
+Systemy te to zwykle system rodzajów (niewielka zamknięta liczba kategorii mająca 
+duży wpływ na inne konstrukcje języka) lub system liczników (duża otwarta liczba 
+kategorii mająca ograniczony wpływ na inne konstrukcje, np. przy liczeniu) albo klasy. 
+Większość języków indoeuropejskich ma system rodzajów - od 2 (włoski, francuski), 
+przez 3 (łacina, niemiecki) do nawet 5 (polski). Języki japoński oraz chiński są 
+przykładami języków z systemem liczników. Pewne zmiany zachodzące we współczesnym
+angielskim można zinterpretować jako przejście od systemu rodzajów (który prawie zanikł) 
+do systemu liczników (które odgrywają coraz większą rolę w języku).Odpowiada 
+na pytania: co to? kto to?                    
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In linguistics, a noun or noun substantive is a lexical category which is defined in 
+terms of how its members combine with other grammatical kinds of expressions. Since 
+different languages have different inventories of grammatical categories, the definition 
+of noun will differ from language to language. In English, nouns can be defined as those 
+morphological stems that form words which can co-occur with (in)definite articles and 
+attributive adjectives, and function as the head of a noun phrase.
+</value>
+            </description>
+            <example><lang>pl</lang><value>dom</value></example>
+            <example><lang>pl</lang><value>krzesło</value></example>
+            <example><lang>pl</lang><value>ławka</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>ger</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>rzeczownik odsłowny</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Rzeczownik odsłowny - tworzy się przez dodanie do rdzenia czasownika końcówki. Jako 
+rzeczownik odpowiada na pytanie kto? co? i oznacza nazwę jakiejś czynności lub stanu. 
+Zwykle kończy się w języku polskim na “-cie” lub “– nie”: bycie, stanie, rzeźbienie, 
+czytanie, chodzenie. Dużo kłopotów sprawia Polakom pisownia tych rzeczowników w formie 
+zaprzeczonej, z nie na początku. Według obowiązujących reguł – nie z rzeczownikami 
+odsłownymi piszemy razem. Przykłady poprawnej pisowni: niedotrzymanie terminu, 
+niepalenie papierosów, nieuświadomienie pacjentów, nieprzestrzeganie reguł, 
+niezatrzymanie się, niewykonanie polecenia.
+</value>
+            </description>
+            <example><lang>pl</lang><value>stanie</value></example>
+            <example><lang>pl</lang><value>rzeźbienie</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>depr</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>forma deprecjatywna</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>deprecation</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Forma deprecjatywna rzeczownika została wprowadzona przez Bienia [Bień] w celu
+oznaczenia form rzeczowników, dla których występuje dość rzadko spotykana zmiana rodzaju 
+(z m1 na m2) np. profesorowie - profesory.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Used to mark rarly used forms of nouns in polish language. These forms have
+changed theire gender from m1 to m2.
+</value>
+            </description>
+            <example><lang>pl</lang><value>profesory</value></example>
+            <example><lang>pl</lang><value>oficery</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>verb</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>czasownik</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>verb</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Czasownik – część mowy przedstawiająca dziejące się czynności oraz niektóre stany, 
+w zdaniu tworzy orzeczenie. Nie w każdym języku da się wyróżnić jasną klasę czasowników, 
+np. w języku japońskim przymiotniki mają wiele właściwości charakterystycznych dla 
+czasowników.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In syntax, a verb is a word belonging to the part of speech that usually denotes an action 
+(bring, read), an occurrence (decompose, glitter), or a state of being (exist, stand). 
+Depending on the language, a verb may vary in form according to many factors, possibly 
+including its tense, aspect, mood and voice. It may also agree with the person, gender, 
+and/or number of some of its arguments (subject, object, etc.).
+</value>
+            </description>
+            <example><lang>pl</lang><value>chodzić</value></example>
+            <example><lang>pl</lang><value>skakać</value></example>
+            <example><lang>pl</lang><value>myśleć</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>adv</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>przysłówek</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>adverb</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Przysłówek - nieodmienna część mowy, określająca cechy czynności, stany oraz inne cechy. 
+Występuje zawsze z czasownikiem, przymiotnikiem lub innym przysłówkiem. Pełni funkcję 
+okolicznika, orzecznika. Tworzy się je najczęściej od przymiotników za pomocą 
+końcówki -e, -o. Przysłówki utworzone od przymiotników (odprzymiotnikowe) zazwyczaj 
+stopniują się (tak jak przymiotniki, od których pochodzą). Pozostałe przysłówki, 
+np. dziś, wczoraj, zawsze, nie stopniują się.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+An adverb is a part of speech. It is any word that modifies any other part of language: 
+verbs, adjectives (including numbers), clauses, sentences and other adverbs, except for 
+nouns; modifiers of nouns are primarily determiners and adjectives. Adverbs typically 
+answer such questions as how?, when?, where?, To what extent?, In what kind or how often? 
+This function is called the adverbial function, and is realized not just by single words 
+(i.e., adverbs) but by adverbial phrases and adverbial clauses. Adverbs also describe 
+adjectives, verbs, and other adverbs.
+</value>
+            </description>
+            <example><lang>pl</lang><value>szybko</value></example>
+            <example><lang>pl</lang><value>wysoko</value></example>
+            <example><lang>pl</lang><value>sprawnie</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>conj</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>spójnik</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>conjuction</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Spójnik - nieodmienna część mowy. Spójnikami są wyrazy łączące słowa, dwie 
+jednorodne części zdania lub wyrażenia.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In grammar, a conjunction is a part of speech that connects two words, phrases, 
+or clauses together. This definition may overlap with that of other parts of speech, 
+so what constitutes a "conjunction" should be defined for each language. In general, 
+a conjunction is an invariable grammatical particle, and it may or may not stand between 
+the items it conjoins. The definition can also be extended to idiomatic phrases that 
+behave as a unit with the same function as a single-word conjunction 
+(as well as, provided that, etc.).
+</value>
+            </description>
+            <example><lang>pl</lang><value>a</value></example>
+            <example><lang>pl</lang><value>i</value></example>
+            <example><lang>pl</lang><value>też</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>prep</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>przyimek</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>preposition</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Przyimek (łac. praepositio) – nieodmienna część mowy, która łączy się z wyrazem i 
+nadaje mu inny sens; np. rzeczownik stół tworzy z przyimkami wiele zestawień: 
+na stole, o stole, za stołem, obok stołu, po stole, pod stołem, zza stołu, koło stołu, 
+przy stole, ponad stołem, od stołu, ku stołowi. Przyimek w połączeniu z rzeczownikiem, 
+przymiotnikiem, liczebnikiem tworzy wyrażenie przyimkowe, np. z nudów, ze strachu, 
+sklep z butami, zeszyt w kratkę, z piętnaście, ze sto, z milion.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In grammar, an adposition (preposition) is an element that, prototypically, combines 
+syntactically with a phrase and indicates how that phrase should be interpreted 
+in the surrounding context. If the location of a particular adposition is fixed 
+with respect to its complement phrase, it may also be known as a preposition 
+(comes before the phrase), postposition (after the phrase), or circumposition 
+(around the phrase). In the terminology of some linguists, an adposition is called 
+a preposition regardless of its position relative to its complement.
+</value>
+            </description>
+            <example><lang>pl</lang><value>w</value></example>
+            <example><lang>pl</lang><value>na</value></example>
+            <example><lang>pl</lang><value>nad</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>num</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>liczebnik</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>number</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Liczebnik jest częścią mowy określającą liczbę, ilość, wielokrotność lub kolejność. 
+Niektóre liczebniki (np. główne) odmieniają się (przez przypadki i rodzaje), jednak 
+zjawisko to uzależnione jest od typu liczebnika. Łączy się z rzeczownikiem, określając 
+go. Podlega deklinacji. W języku polskim istnieją następujące rodzaje liczebników: 
+główne - jeden, dwa, trzy, cztery, pięć, sześć, siedem, osiem, dziewięć, dziesięć, 
+sto, tysiąc; porządkowe - pierwszy, setny, tysięczny; ułamkowe - ćwierć, pół, półtora, 
+jedna druga, trzy czwarte; zbiorowe - dwoje, troje, czworo, pięcioro, sześcioro, 
+siedmioro, ośmioro, dziewięcioro, dziesięcioro; mnożne - podwójny, potrójny, poczwórny; 
+nieokreślone - niewiele, kilka, kilkadziesiąt, kilkaset, wiele. Liczebniki zbiorowe 
+łączą się z rzeczownikami: mającymi tylko liczbę mnogą (np.troje skrzypiec), 
+oznaczającymi osoby różnej płci (np.dwoje ludzi), oznaczającymi istoty niedorosłe 
+(np.czworo dzieci). Stosujemy je także w tradycyjnych połączeniach wyrazowych 
+(np. dwoje oczu, dwoje uszu). Liczebniki – jedni, dwaj, dwóch, obaj, obydwaj, 
+obydwóch (obydwu), trzej, trzech, czterej, czterech – łączą się z rzeczownikami 
+męskoosobowymi: dwaj panowie poszli, dwóch panów poszło; pozostałe liczebniki łączą się 
+z rzeczownikami niemęskoosobowymi: jedne książki, dwa konie, dwie linie itp.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+A number is an abstract idea used in counting and measuring. A symbol which represents 
+a number is called a numeral, but in common usage the word number is used for both 
+the idea and the symbol. In addition to their use in counting and measuring, numerals 
+are often used for labels (telephone numbers), for ordering (serial numbers), 
+and for codes (ISBNs). In mathematics, the definition of number has been extended 
+over the years to include such numbers as zero, negative numbers, rational numbers, 
+irrational numbers, and complex numbers.
+</value>
+            </description>
+            <example><lang>pl</lang><value>jeden</value></example>
+            <example><lang>pl</lang><value>milionem</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>adjp</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>przymiotnik poprzyimkowy</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Przymiotnik poprzyimkowy to fleksem utworzony dla opisania form typu polsku 
+występujących wyłącznie we frazach typu po polsku.
+</value>
+            </description>
+            <example><lang>pl</lang><value>niemiecku</value></example>
+            <example><lang>pl</lang><value>mongolsku</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>ign</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>ignorowana część mowy</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>ignored part of speech</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Ignorowana część mowy.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Ignored part of speech.
+</value>
+            </description>
+        </tag>
+        
+        <tag>
+            <symbol>indecl</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>nieodmienna część mowy</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>uninflected part of speech</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Nieodmienna część mowy,
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Uninflected part of speech.
+</value>
+            </description>
+        </tag>
+
+        <tag>
+            <symbol>irreg</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>forma nieregularna</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>irregular form</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Forma nieregularna (nierozpoznana dokłdniej pod względem wartości atrybutów
+np. subst:irreg)
+</value>
+            </description>
+        </tag>
+        
+        <tag>
+            <symbol>pact</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>imiesłów przymiotnikowy teraźniejszy czynny</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>active adjective participle</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Imiesłów przymiotnikowy teraźniejszy czynny to przymiotnik pochodzący 
+od czasownika mówiący o sprawcy czynności teraźniejszej. 
+Jest on tworzony za pomocą cząstki -ący (np. biorący, tworzący, 
+rozumiejący, piszący itp.). Cząstkę tę dodaje się do tematu 
+3. os. 1. mn. czasu teraźniejszego czasownika 
+(np. pisać→pisz-ą→pisz-ący→piszący; rozumieć→rozumiej-ą→rozumiej-ący→rozumiejący...).
+Dowolne zdanie w czasie teraźniejszym (rozsądnych rozmiarów) można zamienić 
+we frazę rzeczownikową, zamieniając obecny tam czasownik na imiesłów czynny 
+- "robotnicy budują nowy most na Odrze" → "robotnicy budujący nowy most na Odrze" itd.				
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In linguistics, a participle (from Latin participium, a calque of Greek μετοχη 
+"partaking") is a non-finite verb form that can be used in compound tenses or voices, 
+or as a modifier. Participles often share properties with other parts of speech, 
+in particular adjectives and nouns.
+</value>
+            </description>
+            <example><lang>pl</lang><value>robiący</value></example>
+            <example><lang>pl</lang><value>biegnąca</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>ppas</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>imiesłów przymiotnikowy przeszły bierny</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>passive adjective participle</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Imiesłów przymiotnikowy przeszły bierny - część mowy tworzona poprzez dodanie przyrostka 
+-ny, -ony (także -’ony ← -’eny), -ty do tematu czasu przeszłego danego czasownika 
+(np. pisać → pisa-ć → pisa-ny, zrobić → zrobi-ć → zrobi-ony, nieść → niós-ł 
+(← nies-ł) → nies-’ony → niesiony).
+Dowolne zdanie w czasie teraźniejszym (rozsądnych rozmiarów) można zamienić we 
+frazę rzeczownikową, zamieniając obecny tam czasownik na imiesłów przymiotnikowy bierny 
+- "nowy most na Odrze jest budowany przez robotników" - "nowy most na Odrze budowany 
+przez robotników" itd.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In linguistics, a participle (from Latin participium, a calque of Greek μετοχη 
+"partaking") is a non-finite verb form that can be used in compound tenses or voices, 
+or as a modifier. Participles often share properties with other parts of speech, 
+in particular adjectives and nouns.
+</value>
+            </description>
+            <example><lang>pl</lang><value>robiony</value></example>
+            <example><lang>pl</lang><value>zrobiony</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>pant</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>imiesłów przysłówkowy uprzedni</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>anticipative adverb participle</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Imiesłów przysłówkowy uprzedni – bezosobowa forma czasownika, stosowana 
+w celu wyrażenia uprzedniości jakiejś czynności w stosunku do innej.
+W języku polskim typową końcówką takiego imiesłowu jest -łszy po spółgłosce 
+i -wszy po samogłosce (np. zrobiwszy, zjadłszy, powiedziawszy).
+Przykłady w kontekście
+Dobiegłszy do mety, zawodnik padł na bieżnię. - użycie imiesłowu przysłówkowego 
+uprzedniego wskazuje na to, że czynność dobiegnięcia odbyła się przed padnięciem 
+na bieżnię. Zapowiedziawszy swą dymisję, premier odetchnął z ulgą. - premier najpierw 
+zapowiedział dymisję, potem odetchnął z ulgą. Ubrawszy się , wybiegł szybko.
+
+Należy zauważyć, że wykonawca czynności jest / powinien być wymieniony w dalszej części 
+zdania ze względów logicznych. Gdy tak nie jest, powstają nieporozumienia.
+Błędy
+Przykłady błędów językowych w użyciu imiesłowu przysłówkowego uprzedniego:
+Doszedłszy do pracy, kawa już na mnie czekała. - sugeruje to, że to kawa doszła do pracy;
+Wyrzuciwszy śmieci, wiadro zostało porządnie umyte. - sugeruje to, że wiadro wyrzuciło 
+śmieci.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In linguistics, a participle (from Latin participium, a calque of Greek μετοχη 
+"partaking") is a non-finite verb form that can be used in compound tenses or voices, 
+or as a modifier. Participles often share properties with other parts of speech, 
+in particular adjectives and nouns.
+</value>
+            </description>
+            <example><lang>pl</lang><value>zrobiwszy</value></example>
+            <example><lang>pl</lang><value>wypiwszy</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>pcon</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>imiesłów przysłówkowy współczesny</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>contemporary adverb participle</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Imiesłów przysłówkowy współczesny – bezosobowa forma czasownika wyrażająca 
+czynność trwającą równocześnie z inną czynnością.
+W języku polskim końcówką takiego imiesłowu jest -ąc (np. robiąc, pisząc, jedząc).
+Przykłady w kontekście:
+Zmywając naczynia, słuchała radia. – tzw. jednocześnie zmywała naczynia i słuchała radia.
+Czytając gazetę, znalazłam ogłoszenie o sprzedaży samochodu. 
+– znalazłam ogłoszenie podczas czytania.
+W zdaniach złożonych z użyciem imiesłowu przysłówkowego współczesnego należy zwrócić 
+uwagę, że wykonawca czynności musi być wskazany w dalszej części tego zdania - innymi 
+słowy podmiot w obu zdaniach lub zdaniu i równoważniku musi być ten sam. 
+Często mają miejsce przypadki niepoprawnego formułowania takich wypowiedzi.
+Przykłady błędnych konstrukcji z imiesłowem przysłówkowym współczesnym:
+Idąc do pracy miał miejsce wypadek. - sugeruje to, że wypadek szedł do pracy
+Pisząc artykuł do Wikipedii zadzwonił telefon. - sugeruje to, że telefon pisał artykuł.			
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In linguistics, a participle (from Latin participium, a calque of Greek μετοχη 
+"partaking") is a non-finite verb form that can be used in compound tenses or voices, or 
+as a modifier. Participles often share properties with other parts of speech, 
+in particular adjectives and nouns.
+</value>
+            </description>
+            <example><lang>pl</lang><value>robiąc</value></example>
+            <example><lang>pl</lang><value>czytając</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>ppron12</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>zaimek nietrzecioosobowy</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>pronoun</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Zaimek – część mowy zastępująca rzeczownik (np. ja), przymiotnik (np. mój), liczebnik 
+(np. tyle) lub przysłówek (np. tam) i pełni ich funkcje w zdaniu.
+Odmiana zaimka zależy od tego, którą część mowy on zastępuje. Zaimek wskazuje osoby, 
+przedmioty, cechy itd. bez dokładnego ich nazywania. Ze względu na "odziedziczony" rodzaj 
+odmiany wyróżniamy w języku polskim następujące typy zaimków:
+odmienne - odmieniają się przez przypadki, liczby i rodzaje 
+rzeczowne - zaimek rzeczowny (ja, ty, my, wy, oni, kto, co, nic, ktoś)-
+(odmienia się przez przypadki, z wyjątkiem "on" - przypadki
+, liczby i rodzaje, oraz "kto", "co" - przez przypadki i rodzaje).
+przymiotne - zaimek przymiotny (mój, twój; nasz, taki, który, inny, tamten, ta, ci)- 
+(Odmienia się przez przypadki, liczby i rodzaje)
+liczebne - zaimek liczebny (ile, tyle, kilka)- (odmienia się przez przypadki i rodzaje)
+nieodmienne 
+przysłowne - zaimek przysłowny (tak, tu, wtedy, gdzieś, tamtędy, kiedyś)- 
+(nie odmienia się w ogóle)
+
+Podział zaimków ze względu na znaczenie:
+osobowe (np. ja, ty, my, wy, oni, one)
+zwrotne (np. się, siebie, sobie)
+dzierżawcze (np. mój, twój, nasz, wasz, ich, jego, jej)
+wskazujące (np. ten, ta, to, tamten, tu, ów, tędy, taki, ci, tamci, owi)
+pytające (np. kto? co? jaki? który? gdzie? kiedy? jak? komu? czemu? kogo?)
+względne (np. kto, co, komu - bez znaku zapytania; łączą zdanie nadrzędne z podrzędnym)
+nieokreślone (np. ktoś, coś, jakiś, gdzieś, kiedyś, cokolwiek)
+przeczące (np. nic, nikt, żaden, nigdy, nigdzie)
+upowszechniające (np. wszyscy, zawsze)
+Zaimek nietrzecioosobowy nie obejmuje leksemu on.	
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In linguistics and grammar, a pronoun is a pro-form that substitutes for a noun phrase 
+(including a noun phrase consisting of a single noun) with or without a determiner, 
+such as you and they in English. The replaced phrase is the antecedent of the pronoun. 
+A pronoun used for the item questioned in a question is called an interrogative pronoun, 
+such as who.
+For example, consider the sentence "John gave the coat to Alice." All three nouns in 
+the sentence can be replaced by pronouns: "He gave it to her." If the coat, John, 
+and Alice have been previously mentioned, the listener can deduce what the pronouns he, 
+it and her refer to and therefore understand the meaning of the sentence. However, 
+if the sentence, "He gave it to her," is the first presentation of the idea, none of 
+the pronouns have antecedents, also called unprecursed pronouns, and each pronoun is 
+therefore considered ambiguous.
+This part of speech does not cover the "on" pronoun.
+</value>
+            </description>
+            <example><lang>pl</lang><value>ja</value></example>
+            <example><lang>pl</lang><value>wasz</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>ppron3</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>zaimek trzecioosobowy</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>third person pronoun</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Zaimek – część mowy zastępująca rzeczownik (np. ja), przymiotnik (np. mój), 
+liczebnik (np. tyle) lub przysłówek (np. tam) i pełni ich funkcje w zdaniu.
+Ta cześć mowy obejmuje leksem "on".
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In linguistics and grammar, a pronoun is a pro-form that substitutes for a noun phrase 
+(including a noun phrase consisting of a single noun) with or without a determiner, 
+such as you and they in English. The replaced phrase is the antecedent of the pronoun. 
+A pronoun used for the item questioned in a question is called an interrogative pronoun, 
+such as who.
+For example, consider the sentence "John gave the coat to Alice." All three nouns in 
+the sentence can be replaced by pronouns: "He gave it to her." If the coat, John, 
+and Alice have been previously mentioned, the listener can deduce what the pronouns he, 
+it and her refer to and therefore understand the meaning of the sentence. However, 
+if the sentence, "He gave it to her," is the first presentation of the idea, none of 
+the pronouns have antecedents, also called unprecursed pronouns, and each pronoun is 
+therefore considered ambiguous.
+This part of speech covers only the "on" pronoun.
+</value>
+            </description>
+            <example><lang>pl</lang><value>on</value></example>
+            <example><lang>pl</lang><value>jego</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>siebie</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>zaimek - się</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>sie - pronoun</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Zaimek SIEBIE to specjalna klasa stworzona dla opisania wysoce nietypowego leksemu,
+Klasa ta zawiera tylko jeden leksem zawierajacy jeden fleksem odmienny tylko przez 
+przypadek i w dodatku defektywny (pozbawiony mianownika i wołacza).
+Naleza do niego mianowicie formy o wykładnikach siebie, sobie, soba. Segment sie ze
+wzgledu na trudnosci interpretacyjne jest traktowany zawsze jako wykładnik samodzielnego
+nieodmiennego leksemu SIE˛ (kublikowego) [Woliński].
+</value>
+            </description>
+            <example><lang>pl</lang><value>się</value></example>
+            <example><lang>pl</lang><value>sobie</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>pred</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>predykatyw</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Predykatyw reprezentuje czasowniki niewłaściwe o odmianie czysto analitycznej 
+np. można, trzeba, widać.
+</value>
+            </description>
+            <example><lang>pl</lang><value>można</value></example>
+            <example><lang>pl</lang><value>trzeba</value></example>
+            <example><lang>pl</lang><value>widać</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>xxs</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>ciało obce nominalne</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>inflected unknown form</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Ciało obce jest słowem nie objętym fleksją polską.
+Ciało obce nominalne występujące w kontekście wymagającym przypadka.
+</value>
+            </description>
+        </tag>
+        
+        <tag>
+            <symbol>xxx</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>ciało obce</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>unknown form</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Ciało obce jest słowem nie objętym fleksją polską.
+</value>
+            </description>
+        </tag>
+        
+    </category>
+    
+    <category>
+        <symbol>number</symbol>
+        <name>
+            <lang>pl</lang>
+            <value>liczba</value>
+        </name>
+        <name>
+            <lang>en</lang>
+            <value>grammatical number</value>
+        </name>
+        <description>
+            <lang>pl</lang>
+<value>
+Liczba - kategoria gramatyczna dotycząca niektórych części mowy. W języku polskim
+kategoria liczby dotyczy rzeczownika, przymiotnika i czasownika. Współcześnie występuje
+w polszczyźnie liczba pojedyncza i liczba mnoga, dawniej także liczba podwójna.
+</value>
+        </description>
+        <description>
+            <lang>en</lang>
+<value>
+In linguistics, grammatical number is grammatical category of nouns, pronouns, 
+and verb agreement that expresses count distinctions (such as "one" or "more than one"). 
+The count distinctions typically, but not always, correspond to the actual count of the 
+referents of the marked noun or pronoun.
+</value>
+        </description>
+        
+        <tag>
+            <symbol>sg</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>liczba pojedyncza</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>singular</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Liczba pojedyncza – to szereg form fleksyjnych, tj. przypadków w deklinacji 
+i osób w koniugacji, oznaczających jeden przedmiot bez względu na to, czy jest 
+to rzeczywiście jednostka (np. mały chłopiec biegnie), czy gatunek (np. pies szczeka), 
+czy też zbiorowość (np. armia walczy). Nieliczne rzeczowniki mają tylko formy 
+liczby pojedynczej. Są to niektóre nazwy własne (np. Wisła, Bałtyk), większość 
+rzeczowników będących nazwami materiałów (np. miedź), wiele rzeczowników 
+oznaczających pojęcia oderwane (np. dobroć, radość) oraz rzeczowniki zbiorowe 
+(np. szlachta, sitowie)
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Singular is a grammatical number, typically referring to one of the referent 
+in the real world. In the English language, singular and plural are the only 
+grammatical numbers. In English, nouns, pronouns, and demonstratives inflect 
+for plurality. In many other languages, for example German and the various Romance 
+languages, articles and adjectives also inflect for plurality. 
+For example, in the English sentence "The brown cats run", 
+only the noun and verb are inflected; but in the German sentence 
+"Die braunen Katzen rennen", every word (article, noun, adjective, and verb) is inflected.
+</value>
+            </description>
+            <example><lang>pl</lang><value>(jeden) dom</value></example>
+            <example><lang>pl</lang><value>(jedna) ławka</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>pl</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>liczba mnoga</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>plural</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Liczba mnoga - forma fleksyjna, tj. przypadek w deklinacji i w koniugacji, 
+oznaczający wiele przedmiotów lub osób, a także w przypadku przedmiotów zbiorowych 
+- grupy tych przedmiotów (np. piasek w liczbie pojedynczej oznacza wiele ziaren 
+piasku, ale istnieje też forma w liczbie mnogiej - piaski - mogąca się odnosić 
+do większych zbiorów - np. piaski pustyni; podobnie armia to grupa ludzi, 
+gramatycznie liczba pojedyncza, istnieje jednak rzeczownik armie w liczbie mnogiej). 
+Nieliczne rzeczowniki mają tylko formy liczby mnogiej, np. "drzwi", "odrzwia", "wrota", 
+"ludzie", "spodnie", "majtki", "gacie", "gatki".
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Plural is a grammatical number, typically referring to more than one of the referent 
+in the real world. In the English language, singular and plural are the only 
+grammatical numbers. In English, nouns, pronouns, and demonstratives inflect 
+for plurality. (See English plural.) In many other languages, for example 
+German and the various Romance languages, articles and adjectives 
+also inflect for plurality. For example, in the English sentence "The brown cats run", 
+only the noun and verb are inflected; but in the German sentence 
+"Die braunen Katzen rennen", every word (article, noun, adjective, and verb) is inflected.
+</value>
+            </description>
+            <example><lang>pl</lang><value>(trzy) domy</value></example>
+            <example><lang>pl</lang><value>(trzy) ławki</value></example>
+        </tag>
+        
+    </category>
+    
+    <category>
+        <symbol>case</symbol>
+        <name>
+            <lang>pl</lang>
+            <value>przypadek</value>
+        </name>
+        <name>
+            <lang>en</lang>
+            <value>case</value>
+        </name>
+        <description>
+            <lang>pl</lang>
+<value>
+Przypadek to kategoria gramatyczna głównie języków fleksyjnych, przez którą 
+odmieniają się rzeczowniki, przymiotniki, liczebniki, zaimki, imiesłowy 
+(określane przez to zbiorczym mianem imion), a niekiedy też 
+czasowniki (co w języku polskim nie występuje).
+System deklinacyjny jest niezbędny do ustalenia właściwych relacji poszczególnych 
+wyrazów w zdaniu. Konsekwencją jego istnienia jest swoboda kształtowania 
+kolejności wyrazów w zdaniu: podmiot, orzeczenie i dopełnienie nie mają 
+raz na zawsze ustalonych miejsc, mogą następować w dowolnej kolejności.
+</value>
+        </description>
+        <description>
+            <lang>en</lang>
+<value>
+In grammar, the case of a noun or pronoun indicates its grammatical function 
+in a greater phrase or clause; such as the role of subject, of direct object, 
+or of possessor. While all languages distinguish cases in some fashion, 
+it is only customary to say that a language has cases when these are codified 
+in the morphology of its nouns — that is, when nouns change their form 
+to reflect their case. (Such a change in form is a kind of declension, 
+hence a kind of inflection.) Cases are related to, but distinct from, 
+thematic roles such as agent and patient; while certain cases in each 
+language tend to correspond to certain thematic roles, cases are a syntactic 
+notion whereas thematic roles are a semantic one.
+</value>
+        </description>
+        
+        <tag>
+            <symbol>nom</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>mianownik</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>nominative</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Mianownik (łac. nominativus) jest przypadkiem, w którym rzeczownik 
+występuje w roli podmiotu. W mianowniku występuje zazwyczaj forma słownikowa.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+The nominative case is a grammatical case for a noun, which generally marks 
+the subject of a verb, as opposed to its object or other verb arguments.
+</value>
+            </description>
+            <example><lang>pl</lang><value>krzesło</value></example>
+            <example><lang>pl</lang><value>stół</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>gen</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>dopełniacz</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>genitive</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Dopełniacz (łac. genetivus) - forma używana w relacjach przynależności, 
+jak np. w wyrażeniu kot Ali. W języku polskim ma o wiele szersze 
+zastosowanie - używany jest zamiast biernika przy czasownikach w formie 
+przeczącej, przy wielu innych, np. udzielić wywiadu oraz zastępuje 
+nieistniejący już ablativus na zasadzie tzw. synkretyzmu przypadków, 
+przejąwszy przy tym również podległość czasownikom rządzącym 
+pierwotnie ablatiwem (np. używać czegoś)
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In grammar, the genitive case or possessive case (also called 
+the second case) is the case that marks a noun as modifying another noun. 
+It often marks a noun as being the possessor of another noun but it 
+can also indicate various relationships other than possession; 
+certain verbs may take arguments in the genitive case; 
+and it may have adverbial uses
+</value>
+            </description>
+            <example><lang>pl</lang><value>krzesła</value></example>
+            <example><lang>pl</lang><value>stołu</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>dat</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>celownik</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>dative</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Celownik (łac. dativus) - forma używana jako dopełnienie dalsze 
+(Kasia dała Ali prezent) oraz do oznaczania celu pożytku 
+lub szkody (np. dzieci zepsuły mu telewizor - mu nie dotyczy 
+tu bezpośrednio akcji, a jedynie jej skutków).
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+The dative case is a grammatical case generally used to indicate 
+the noun to whom something is given. For example, in "John gave a book to Mary".
+</value>
+            </description>
+            <example><lang>pl</lang><value>biedronce</value></example>
+            <example><lang>pl</lang><value>chłopcu</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>acc</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>biernik</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>accusative</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Biernik (łac. accusativus) - forma używana jako dopełnienie bliższe. 
+W języku polskim często zamiast biernika występuje dopełniacz, 
+a przy niektórych czasownikach narzędnik 
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+The accusative case (abbreviated ACC) of a noun is the grammatical 
+case used to mark the direct object of a transitive verb. The same 
+case is used in many languages for the objects of (some or all) 
+prepositions. Basically, it is a noun that is having something 
+done to it, usually joined (such as in Latin) with the Nominative case.
+</value>
+            </description>
+            <example><lang>pl</lang><value>chłopca</value></example>
+            <example><lang>pl</lang><value>krzesło</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>inst</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>narzędnik</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>instrumental</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Narzędnik (łac. instrumentalis) - forma używana m.in. dla określenia 
+narzędzia (naprawił telewizor śrubokrętem, przyjechałem pociągiem), 
+sposobu w jaki coś się dzieje (osiągnąłem to sprytem) itp. 
+Przy czasownikach oznaczających rządzenie oznacza dopełnienie 
+bliższe (dyrygent kieruje orkiestrą), przy niektórych innych 
+dopełnienie dalsze (Maria handluje kwiatami). Łączy się 
+z niektórymi przyimkami, np. z, pod, nad.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+The instrumental case (also called the eighth case) is a grammatical 
+case used to indicate that a noun is the instrument or means by 
+or with which the subject achieves or accomplishes an action.
+</value>
+            </description>
+            <example><lang>pl</lang><value>pociągiem</value></example>
+            <example><lang>pl</lang><value>chłopcem</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>loc</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>miejscownik</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>locative</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Miejscownik (łac. locativus) - forma używana do opisu miejsca akcji. 
+W języku polskim samodzielny miejscownik nigdy nie występuje, do opisu 
+miejsca zawsze używa się wyrażeń przyimkowych.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Locative (also called the seventh case) is a grammatical case which 
+indicates a location. It corresponds vaguely to the English 
+prepositions.
+</value>
+            </description>
+            <example><lang>pl</lang><value>krześle</value></example>
+            <example><lang>pl</lang><value>stole</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>voc</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>wołacz</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>vocative</value>
+            </name>
+            <description>
+				<lang>pl</lang>
+<value>
+Wołacza używa się w zawołaniach, bezpośrednich zwrotach (apostrofa), 
+w funkcji apelu. Rzeczownik lub inna część mowy w wołaczu nie ma 
+bezpośredniego związku z resztą zdania (nie wskazuje na związki 
+zachodzące między nią samą a innymi wyrazami w zdaniu), nie można 
+też zadać odpowiadającego mu pytania, popularnie używanego do 
+określania innych przypadków (np. „kogo? czego?” - dopełniacz, 
+„kogo? co?” - biernik). Wyrazy w wołaczu stoją niejako 'obok' reszty zdania.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+The vocative case is the case used for a noun identifying the 
+person (animal, object, etc.) being addressed and/or 
+occasionally the determiners of that noun.
+</value>
+            </description>
+            <example><lang>pl</lang><value>psie</value></example>
+            <example><lang>pl</lang><value>chłopcze</value></example>
+        </tag>
+        
+    </category>
+  
+   
+    <category>
+        <symbol>gender</symbol>
+        <name>
+            <lang>pl</lang>
+            <value>rodzaj</value>
+        </name>
+        <name>
+            <lang>en</lang>
+            <value>gender</value>
+        </name>
+        <description>
+            <lang>pl</lang>
+<value>
+Rodzaj gramatyczny to kategoria gramatyczna, która wyznacza podział rzeczowników 
+na kilka klas. Dla rzeczownika rodzaj jest kategorią selektywną. Oznacza to, że rzeczownik 
+ma określony rodzaj gramatyczny. Rzeczowniki można wobec tego podzielić na grupy ze względu 
+na ich rodzaj. Na przykład rzeczownik ręcznik jest rodzaju męskiego i wobec tego należy 
+do grupy rzeczowników rodzaju męskiego, encyklopedia jest rodzaju żeńskiego, a krzesło 
+rodzaju nijakiego. 
+Rzeczownik nie odmienia się przez rodzaje, na przykład nie istnieje forma żeńska 
+rzeczownika ręcznik. Dla przymiotnika i niektórych innych części mowy rodzaj jest w wielu 
+językach (także w polskim) kategorią fleksyjną, co oznacza, że przymiotnik odmienia się 
+przez rodzaje. Posiada więc na przykład formę rodzaju męskiego (duży), żeńskiego (duża) 
+i nijakiego (duże). Przymiotnik dopasowuje się pod względem rodzaju do określanego przez 
+siebie rzeczownika (np. duży ręcznik, duża encyklopedia, duże krzesło).            
+</value>
+        </description>
+        <description>
+            <lang>en</lang>
+<value>
+In linguistics, grammatical genders, sometimes also called noun classes, are classes of nouns 
+reflected in the behavior of associated words; every noun must belong to one of the classes 
+and there should be very few which belong to several classes at once.        
+</value>
+        </description>
+        
+        <tag>
+            <symbol>m</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>rodzaj męski</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>Masculine</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Opisuje większość wyrazów odnoszących się do mężczyzn.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Includes most words that refer to males.
+</value>
+            </description>
+            <example><lang>pl</lang><value>ręcznik</value></example>
+            <example><lang>pl</lang><value>hrabia</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>f</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>rodzaj żeński</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>Feminine</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Opisuje większość wyrazów odnoszących się do kobiet.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Includes most words that refer to females
+</value>
+            </description>
+            <example><lang>pl</lang><value>ławka</value></example>
+            <example><lang>pl</lang><value>hrabina</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>n</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>rodzaj nijaki</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>Neuter gender</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Opisuje większość wyrazów nie odnoszących się ani do mężczyzn ani do kobiet.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Includes mostly words that do not refer to males or females
+</value>
+            </description>
+            <example><lang>pl</lang><value>krzesło</value></example>
+            <example><lang>pl</lang><value>dziecko</value></example>
+        </tag>
+        
+    </category>
+    
+    <category>
+        <symbol>comparison</symbol>
+        <name>
+            <lang>pl</lang>
+            <value>stopień</value>
+        </name>
+        <name>
+            <lang>en</lang>
+            <value>comparison</value>
+        </name>
+        <description>
+            <lang>pl</lang>
+<value>
+Stopień jest własnością przymiotnika i przysłówka w większości języków. Stopień opisuje 
+system który różnicuje poziom modyfikacji opisywanego obiektu za pomocą modifikatora. 
+</value>
+        </description>
+        <description>
+            <lang>en</lang>
+<value>
+Comparison, in grammar, is a property of adjectives and adverbs in most languages; it 
+describes systems that distinguish the degree to which the modifier modifies its complement.
+</value>
+        </description>
+        
+        <tag>
+            <symbol>pos</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>stopień równy</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>positive</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Podstawowa postać przymiotnika lub innej stopniowanej części mowy.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Base form of an adjective or adverb.
+Positive is the form of an adjective or adverb on which comparative and superlative 
+are formed with suffixes -ier, -lier, -iest, or -liest, or the forms more/less for 
+polysyllabic adjectives/adverbs.
+</value>
+            </description>
+            <example><lang>pl</lang><value>wysoki</value></example>
+            <example><lang>pl</lang><value>miły</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>comp</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>stopień wyższy</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>comparative</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Formy w tym stopniu używane są jeśli określona cecha ma wyższe natężenie.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In grammar, the comparative is the form of an adjective or adverb which denotes 
+the degree or grade by which a person, thing, or other entity has a property 
+or quality greater or less in extent than that of another, and is used in this 
+context with a subordinating conjunction, such as than, as...as, etc.
+</value>
+            </description>
+            <example><lang>pl</lang><value>wyższy</value></example>
+            <example><lang>pl</lang><value>milszy</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>sup</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>stopień najwyższy</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>superlative</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Formy w tym stopniu używane są jeśli określona cecha ma najwyższe natężenie.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In grammar the superlative of an adjective or adverb is a form of adjective or adverb 
+which indicates that something has some feature to a greater degree than anything 
+it is being compared to in a given context. For example, if Adam is 45, Bess is 35, 
+and Chris is 25, Adam is the oldest of the three, because his age transcends those 
+of Bess and Chris in one direction, while Chris is the youngest, because his age 
+transcends those of Adam and Bess in the other direction. If Dan, who is 50, and Edna, 
+who is 20, join the group, Dan now becomes the oldest and Edna the youngest.
+</value>
+            </description>
+            <example><lang>pl</lang><value>najwyższy</value></example>
+            <example><lang>pl</lang><value>najmilszy</value></example>
+        </tag>
+        
+    </category>
+    
+    <category>
+        <symbol>person</symbol>
+        <name>
+            <lang>pl</lang>
+            <value>osoba</value>
+        </name>
+        <name>
+            <lang>en</lang>
+            <value>person</value>
+        </name>
+        <description>
+            <lang>pl</lang>
+<value>
+Osoba - kategoria gramatyczna czasownika określająca, jak podmiot zdania ma się do stanu 
+lub czynności określonej przez orzeczenie. W języku polskim, podobnie jak w innych językach 
+indoeuropejskich wyróżnia się 3 osoby:
+pierwsza - mówiący jest wykonawcą czynności,
+druga - mówiący zwraca się do wykonawcy czynności,
+trzecia - mówiący nie jest ani nie zwraca się do wykonawcy czynności, jest nim osoba trzecia.
+</value>
+        </description>
+        <description>
+            <lang>en</lang>
+<value>
+Grammatical person, in linguistics, is deictic reference to the participant role of 
+a referent, such as the speaker, the addressee, and others. Grammatical person typically 
+defines a language's set of personal pronouns. It also frequently affects verbs, sometimes 
+nouns, and possessive relationships as well.
+</value>
+        </description>
+        
+        <tag>
+            <symbol>pri</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>pierwsza osoba</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>first person</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Określa, że mówiący jest wykonawcą czynności.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Denotes that a speaker executes an activity.
+</value>
+            </description>
+            <example><lang>pl</lang><value>kupiłem</value></example>
+            <example><lang>pl</lang><value>zjedliśmy</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>sec</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>druga osoba</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>second person</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Określa, że mówiący zwraca się do wykonawcy czynności.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Denotes that a speaker speaks to a person who executes an activity.
+</value>
+            </description>
+            <example><lang>pl</lang><value>kupiłeś</value></example>
+            <example><lang>pl</lang><value>zjedliście</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>tri</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>trzecia osoba</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>third person</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Określa, że mówiący mówi o osobie trzeciej która jest wykonawcą czynności.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Denotes that a an activity is executed by other person.
+</value>
+            </description>
+            <example><lang>pl</lang><value>kupili</value></example>
+            <example><lang>pl</lang><value>zjedli</value></example>
+        </tag>
+        
+    </category>
+    
+    <category>
+        <symbol>aspect</symbol>
+        <name>
+            <lang>pl</lang>
+            <value>aspekt</value>
+        </name>
+        <name>
+            <lang>en</lang>
+            <value>aspect</value>
+        </name>
+        <description>
+            <lang>pl</lang>
+<value>
+Dla języków słowiańskich charakterystyczna jest leksykalizacja kategorii gramatycznej 
+aspektu - aspekt zawarty jest w znaczeniu danego czasownika (nie zaś w formie gramatycznej, 
+w jakiej jest on użyty)[1] i występuje w dwóch podstawowych wartościach: 1) aspekt dokonany; 
+2) aspekt niedokonany.            
+</value>
+        </description>
+        <description>
+            <lang>en</lang>
+<value>
+The grammatical aspect of a verb defines the temporal flow (or lack thereof) in the described 
+event or state. For example, in English the difference between I swim and I am swimming is 
+a difference of aspect.
+</value>
+        </description>
+        
+        <tag>
+            <symbol>perf</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>czasownik dokonany</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>perfective</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Czasowniki dokonane oznaczają czynności przeszłe lub przyszłe, ale nie 
+teraźniejsze – czynność właśnie odbywająca się nie może być już zakończona, 
+więc nie może być wyrażona czasownikiem dokonanym. Czasowniki dokonane mogą oznaczać:
+- stany lub czynności, które zakończyły się (choćby przed sekundą) lub które 
+będą zakończone, o nieistotnym przebiegu, krótkotrwałe lub traktowane przez 
+mówiącego jako całość, np. krzyknął, drgnie;
+- czynności jednorazowe, np. dopisać, wyszedł;
+- czynności, których cel został lub zostanie osiągnięty, łatwo lub z trudnością, 
+np. przeczytałem, doczytała się;
+-przyczyny określonego stanu, np. pokochała (a więc kocha), zrozumiesz 
+(a więc będziesz już rozumieć), poznamy (zatem będziemy znać);
+-początek czynności lub stanu, np. wstanę, zaczerwienił się;
+-koniec czynności lub stanu, np. dośpiewaj;
+-czynności wykonywane w wielu miejscach, na wielu przedmiotach lub przez 
+wiele podmiotów w tym samym czasie, np. powynosił, popękają, poucinać;
+-czynności lub stany, które trwały lub będą trwać przez pewien czas, 
+np. postoję, pobył.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In grammar, the perfective aspect is an aspect that exists in many languages. 
+For reasons outlined in Confusing terminology: perfective vs. perfect, the term 
+"perfective aspect" is variously taken to refer to one of two quite different concepts. 
+More commonly, nowadays, it refers to an action viewed as a single whole, and it is 
+equivalent to the aspectual component of tenses variously called "aorist", "preterite", 
+"simple past" and the like. In some usages, however, it can mean the same thing as 
+the perfect aspect, which refers to a state resulting from a previous action 
+(also described as a previous action with relevance to a particular time, or a previous 
+action viewed from the perspective of a later time).
+</value>
+            </description>
+            <example><lang>pl</lang><value>krzyknął</value></example>
+            <example><lang>pl</lang><value>drgnie</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>imperf</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>czasownik niedokonany</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>imperfective</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Czasowniki niedokonane oznaczają:
+- właśnie odbywające się czynności lub zachodzące stany, których przebieg uważa 
+mówiący za istotny, np. jutro o piątej po południu będę czytał książkę;
+- czynności stanowiące tło dla innych wydarzeń (wyrażanych czasownikami dokonanymi), 
+np. czytałem książkę, gdy zadzwonił telefon;
+- czynności równoczesne, np. będę czytać książkę, podczas gdy brat będzie pisać list;
+- czynności duratywne, trwające przez pewien czas, np. krzyczał, będzie drgać;
+- ruch bez określonego celu, np. chodzę;
+- czynności wielokrotne (iteratywne), np. dopisywać, będziemy wychodziły 
+(wielokrotnie);
+- czynności nierezultatywne, jedynie skierowane w stronę jakiegoś celu 
+(niekoniecznie zmierzające do jego osiągnięcia), np.: będę pisał list;
+- stany ciągłe, np. będę stać.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+The imperfective aspect is a grammatical aspect. It refers to an action that is 
+viewed from a particular viewpoint as ongoing, habitual, repeated, or generally 
+containing internal structure.
+</value>
+            </description>
+            <example><lang>pl</lang><value>chodzę</value></example>
+            <example><lang>pl</lang><value>będę pisał</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>?perf</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>aspekt nierozpoznany</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>unrecognised aspect</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Czasownik nierozpoznany pod względem aspektu.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Unrecognised aspect of a verb.
+</value>
+            </description>
+        </tag>
+        
+    </category>
+    
+    <category>
+        <symbol>negation</symbol>
+        <name>
+            <lang>pl</lang>
+            <value>zanegowanie</value>
+        </name>
+        <name>
+            <lang>en</lang>
+            <value>negation</value>
+        </name>
+        <description>
+            <lang>pl</lang>
+<value>
+"Kategoria fleksyjna zanegowania przysługuje w przedstawionym tu opisie odsłownikom
+i imiesłowom przymiotnikowym czynnym i biernym. Uznajemy mianowicie, ze np.
+formy celebrowanie i niecelebrowanie naleza do tego samego leksemu. Kategoria zanegowania
+została wprowadzona dla odróznienia od siebie tych form. W wypadku tych trzech
+klas gramatycznych obecnosc czastki nie- ma konsekwencje składniowe. Kategoria zanegowania
+nie dotyczy przymiotników, np. nieładny, w ich wypadku bowiem nie ma podobnych
+konsekwencji (a LADNY i NIELADNY stanowia osobne leksemy)." [Woliński]
+</value>
+        </description>
+        
+        <tag>
+            <symbol>aff</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>forma niezanegowana</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>affirmative form</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Forma niezanegowana.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Positive form.
+</value>
+            </description>
+            <example><lang>pl</lang><value>celebrowanie</value></example>
+            <example><lang>pl</lang><value>kuszenie</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>neg</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>forma zanegowana</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>negative form</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Forma zanegowana - o przeciwnym znaczeniu do formy niezanegowanej.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Negative form.
+</value>
+            </description>
+            <example><lang>pl</lang><value>niecelebrowanie</value></example>
+            <example><lang>pl</lang><value>niekuszenie</value></example>
+        </tag>
+        
+    </category>
+    
+    <category>
+        <symbol>after-prepostion</symbol>
+        <name>
+            <lang>pl</lang>
+            <value>poprzyimkowość</value>
+        </name>
+        <name>
+            <lang>en</lang>
+            <value>after preposition</value>
+        </name>
+        <description>
+            <lang>pl</lang>
+<value>
+Poprzyimkowosc róznicuje formy zaimka ON które moga wystapic wyłacznie po przyimku 
+(przez niego, do-n) od wystepujacych w innych kontekstach (jego, go). 
+</value>
+        </description>
+        
+        <tag>
+            <symbol>praep</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>forma poprzyimkowa</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Forma zaimka ON występująca wyłącznie po przyimku.
+</value>
+            </description>
+            <example><lang>pl</lang><value>niego</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>npraep</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>forma niepoprzyimkowa</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Forma zaimka ON występująca nie tylko po przyimku
+</value>
+            </description>
+            <example><lang>pl</lang><value>jego</value></example>
+            <example><lang>pl</lang><value>go</value></example>
+        </tag>
+        
+    </category>
+    
+    <category>
+        <symbol>stress</symbol>
+        <name>
+            <lang>pl</lang>
+            <value>akcentowość</value>
+        </name>
+        <name>
+            <lang>en</lang>
+            <value>stress</value>
+        </name>
+        <description>
+            <lang>pl</lang>
+<value>
+"Kategoria akcentowosci została wprowadzona dla odróznienia form zaimka osobowego
+wystepujacych w zdaniu na pozycji akcentowanej (np. jego) od form wystepujacych na
+pozycji nieakcentowanej (np. go)." [Woliński]
+</value>
+        </description>
+        
+        <tag>
+            <symbol>akc</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>forma akcentowana</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Oznacza zaimki występujące w zdaniu na pozycji akcentowanej.
+</value>
+            </description>
+            <example><lang>pl</lang><value>jego</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>nakc</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>form nieakcentowana</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Oznacza zaimki występujące w zdaniu pozycji nieakcentowanej.
+</value>
+            </description>
+            <example><lang>pl</lang><value>go</value></example>
+        </tag>
+        
+    </category>
+    
+    <category>
+        <symbol>verb-form</symbol>
+        <name>
+            <lang>pl</lang>
+            <value>forma czasownika</value>
+        </name>
+        <name>
+            <lang>en</lang>
+            <value>verb-form</value>
+        </name>
+        
+        <tag>
+            <symbol>fin</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>forma nieprzeszła finitywna</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>not past finitive form</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Klase nazwana nieprzeszłmi formami finitywnymi czasownika tworza formy, które
+samodzielnie wystepuja w funkcji czasu terazniejszego (dla czasowników niedokonanych)
+lub czasu przyszłego prostego (dla czasowników dokonanych).                    
+</value>
+            </description>
+            <example><lang>pl</lang><value>kupuje</value></example>
+            <example><lang>pl</lang><value>kupują</value></example>
+            <example><lang>pl</lang><value>pozakupujecie</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>bedzie</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>forma przyszła czasownika 'być'</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>feature form of the 'to be' verb</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Forma przyszła czasownika być
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Feature form of the 'to be' verb.
+</value>
+            </description>
+            <example><lang>pl</lang><value>będzie</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>praet</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>forma przeszła (pseudoimiesłów)</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>past form</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Forma przeszła czasownika.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Past form of verb.
+</value>
+            </description>
+            <example><lang>pl</lang><value>kupowali</value></example>
+            <example><lang>pl</lang><value>kupował</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>impt</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>tryb rozkazujący</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>imperative mood</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Tryb rozkazujący — wyraża rozkaz, życzenie lub prośbę (Przynieś książkę.). 
+W trzeciej osobie pojawia się słowo „niech” (Niech przyjadą, niech czeka). 
+Sporadycznie spotykane są analogiczne formy dla pierwszej osoby liczby pojedynczej, 
+nie służą one jednak wyrażeniu rozkazu, a stosowane są jako figura stylistyczna 
+(Niech zginę, jeśli to nieprawda!). Tryb rozkazujący nie pozwala 
+na rozróżnienie form czasowych.                    
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+The imperative mood is a grammatical mood that expresses direct commands or requests. 
+It is also used to signal a prohibition, permission or any other kind of exhortation.
+</value>
+            </description>
+            <example><lang>pl</lang><value>kupuj</value></example>
+            <example><lang>pl</lang><value>kupujcie</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>pot</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>tryb przypuszczający</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>hypothetical mood</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Tryb przypuszczający — wyraża niepewność, warunkowość lub wyrażone pośrednio życzenie. 
+W tym trybie czasownik tworzony jest z osobowej formy czasownika i cząstki „by” 
+(-bym, -byś, -byśmy itp.). Np. zrobiłbym to; kupilibyśmy tandem; byłaby tam poszła. 
+Tryb pozwala na rozróżnienie formy czasu przeszłego (Byłbym zrobił) i neutralnej 
+(Zrobiłbym).            
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+The hypothetical mood, found in Russian, Lakota, and other languages, expresses a 
+counterfactual but possible event or situation.
+</value>
+            </description>
+            <example><lang>pl</lang><value>kupiłbym</value></example>
+            <example><lang>pl</lang><value>kupiliby</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>imps</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>forma bezosobowa</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>impersonal past form</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Ta przeszła forma czasownika wyraża sam fakt wykonania czynności, ale uniemożliwia 
+określenie jej wykonawcy.
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+Impersonal past form of a verb expresses a fact that an activity was realised, but 
+this form does not express an executor of the activity.
+</value>
+            </description>
+            <example><lang>pl</lang><value>abdykowano</value></example>
+            <example><lang>pl</lang><value>kupowano</value></example>
+        </tag>
+        
+        <tag>
+            <symbol>inf</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>bezokolicznik</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>infinitive</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Bezokolicznik (łac. infinitivus) to forma czasownika, która wyraża czynność lub 
+stan w sposób abstrakcyjny, zazwyczaj bez określania czasu, rodzaju, liczby, osoby, 
+trybu, strony i aspektu. W niektórych językach może jednak wyrażać niektóre z tych 
+kategorii, np. w łacinie istnieją bezokoliczniki wyrażające czas i stronę, a w grece 
+klasycznej dodatkowo także aspekt. Istnieją też języki (np. nowogrecki lub bułgarski) 
+pozbawione form bezokolicznika.
+W zdaniu bezokolicznik uzupełnia treść czasowników fazowych oraz konstrukcji modalnych. 
+W niektórych językach istnieją też rozbudowane konstrukcje bezokolicznikowe
+</value>
+            </description>
+            <description>
+                <lang>en</lang>
+<value>
+In grammar, infinitive is the name for certain verb forms that exist in many languages. 
+In the usual (traditional) description of English, the infinitive of a verb is its basic 
+form with or without the particle to: therefore, do and to do, be and to be, and 
+so on are infinitives. 
+</value>
+            </description>
+            <example><lang>pl</lang><value>kupować</value></example>
+            <example><lang>pl</lang><value>mieszać</value></example>
+        </tag>
+		
+        <tag>
+            <symbol>refl</symbol>
+            <name>
+                <lang>pl</lang>
+                <value>forma zwrotna</value>
+            </name>
+            <name>
+                <lang>en</lang>
+                <value>reflect form</value>
+            </name>
+            <description>
+                <lang>pl</lang>
+<value>
+Strona zwrotna wystęje, gdy podmiot jednocześnie jest odbiorcą skutków czynności. 
+Czasowniki, które tworzą stronę zwrotną, nazywa się zwrotnymi. W języku polskim wszystkie 
+takie czasowniki występują z zaimkiem zwrotnym "się".
+	Jerzy zamknął się w pokoju.
+	Podmiot wykonał czynność zamknięcia na sobie samym.
+</value>
+            </description>
+            <example><lang>pl</lang><value>mylił się</value></example>
+            <example><lang>pl</lang><value>mylili się</value></example>
+        </tag>
+		
+        
+    </category>   
+
+    
+</tagset>

@@ -50,11 +50,11 @@ public class GrammaticalPropertiesImplTest extends TestCase {
         GrammaticalCategory category = new GrammaticalCategoryImpl("category_" + prefix);
         category.setName("pl", "polish_name_of_category_" + prefix);
         category.setName("en", "english_name_of_category_" + prefix);
-        category.setDescription("pl", "polish_description_of_category_" + prefix);
+        category.setDescription("pl", "polish_description_of_categoy_" + prefix);
         category.setDescription("en", "english_description_of_category_" + prefix);
-        category.addTag(createGrammaticalTag(prefix + ".1"));
-        category.addTag(createGrammaticalTag(prefix + ".2"));
-        category.addTag(createGrammaticalTag(prefix + ".3"));
+        category.addTag(createGrammaticalTag(prefix + "_1"));
+        category.addTag(createGrammaticalTag(prefix + "_2"));
+        category.addTag(createGrammaticalTag(prefix + "_3"));
         return category;
     }
     
@@ -79,13 +79,13 @@ public class GrammaticalPropertiesImplTest extends TestCase {
         GrammaticalPropertiesImpl instance = new GrammaticalPropertiesImpl();
         Tagset tagset = createTagset();
         instance.setTagset(tagset);
-        String mark = "tag_1.1:tag_3.2:tag_2.1";
+        String mark = "tag_1_1:tag_3_2:tag_2_1";
         instance.setMark(mark);
         Collection tags = instance.getTags();
         assertEquals(3, tags.size());
-        assertTrue(tags.contains(tagset.getTag("tag_1.1")));
-        assertTrue(tags.contains(tagset.getTag("tag_3.2")));
-        assertTrue(tags.contains(tagset.getTag("tag_2.1")));
+        assertTrue(tags.contains(tagset.getTag("tag_1_1")));
+        assertTrue(tags.contains(tagset.getTag("tag_3_2")));
+        assertTrue(tags.contains(tagset.getTag("tag_2_1")));
     }
 
     /**
@@ -94,7 +94,7 @@ public class GrammaticalPropertiesImplTest extends TestCase {
     public void testGetMark() {
         System.out.println("getMark");
         Tagset tagset = createTagset();
-        String mark = "tag_1.1:tag_3.2:tag_2.1";
+        String mark = "tag_1_1:tag_3_2:tag_2_1";
         GrammaticalPropertiesImpl instance = new GrammaticalPropertiesImpl(mark, tagset);
         assertEquals(mark, instance.getMark());
     }
@@ -105,15 +105,15 @@ public class GrammaticalPropertiesImplTest extends TestCase {
     public void testSetMark() {
         System.out.println("setMark");
         Tagset tagset = createTagset();
-        String mark = "tag_1.1:tag_3.2:tag_2.1";
+        String mark = "tag_1_1:tag_3_2:tag_2_1";
         GrammaticalPropertiesImpl instance = new GrammaticalPropertiesImpl(mark, tagset);
         assertEquals(mark, instance.getMark());
-        mark = "tag_2.1:tag_2.2";
+        mark = "tag_2_1:tag_2_2";
         instance.setMark(mark);
         Collection tags = instance.getTags();
         assertEquals(2, tags.size());
-        assertTrue(tags.contains(tagset.getTag("tag_2.1")));
-        assertTrue(tags.contains(tagset.getTag("tag_2.2")));
+        assertTrue(tags.contains(tagset.getTag("tag_2_1")));
+        assertTrue(tags.contains(tagset.getTag("tag_2_2")));
         
         try {
             instance.setMark(null);
@@ -130,13 +130,13 @@ public class GrammaticalPropertiesImplTest extends TestCase {
     public void testGetTags() {
         System.out.println("getTags");
         Tagset tagset = createTagset();
-        String mark = "tag_1.1:tag_3.2:tag_2.1";
+        String mark = "tag_1_1:tag_3_2:tag_2_1";
         GrammaticalPropertiesImpl instance = new GrammaticalPropertiesImpl(mark, tagset);
         Collection tags = instance.getTags();
         assertEquals(3, tags.size());
-        assertTrue(tags.contains(tagset.getTag("tag_1.1")));
-        assertTrue(tags.contains(tagset.getTag("tag_3.2")));
-        assertTrue(tags.contains(tagset.getTag("tag_2.1")));
+        assertTrue(tags.contains(tagset.getTag("tag_1_1")));
+        assertTrue(tags.contains(tagset.getTag("tag_3_2")));
+        assertTrue(tags.contains(tagset.getTag("tag_2_1")));
     }
 
     /**
@@ -145,15 +145,15 @@ public class GrammaticalPropertiesImplTest extends TestCase {
     public void testSetTags() {
         System.out.println("setTags");
         Tagset tagset = createTagset();
-        String mark = "tag_1.1:tag_3.2:tag_2.1";
+        String mark = "tag_1_1:tag_3_2:tag_2_1";
         GrammaticalPropertiesImpl instance = new GrammaticalPropertiesImpl(mark, tagset);
         ArrayList tags = new ArrayList();
-        tags.add(tagset.getTag("tag_2.1"));
-        tags.add(tagset.getTag("tag_3.1"));
+        tags.add(tagset.getTag("tag_2_1"));
+        tags.add(tagset.getTag("tag_3_1"));
         instance.setTags(tags);
-        assertEquals("tag_2.1:tag_3.1", instance.getMark());
-        assertTrue(instance.hasTag("tag_2.1"));
-        assertTrue(instance.hasTag("tag_3.1"));
+        assertEquals("tag_2_1:tag_3_1", instance.getMark());
+        assertTrue(instance.hasTag("tag_2_1"));
+        assertTrue(instance.hasTag("tag_3_1"));
         assertEquals(2, instance.getTags().size());
         
         try {
@@ -171,14 +171,14 @@ public class GrammaticalPropertiesImplTest extends TestCase {
     public void testHasTag() {
         System.out.println("hasTag");
         Tagset tagset = createTagset();
-        String mark = "tag_1.1:tag_3.2:tag_2.1";
+        String mark = "tag_1_1:tag_3_2:tag_2_1";
         GrammaticalPropertiesImpl instance = new GrammaticalPropertiesImpl(mark, tagset);
-        assertTrue(instance.hasTag("tag_1.1"));
-        assertTrue(instance.hasTag("tag_3.2"));
-        assertTrue(instance.hasTag("tag_2.1"));
-        assertTrue(instance.hasTag(tagset.getTag("tag_1.1")));
-        assertTrue(instance.hasTag(tagset.getTag("tag_3.2")));
-        assertTrue(instance.hasTag(tagset.getTag("tag_2.1")));
+        assertTrue(instance.hasTag("tag_1_1"));
+        assertTrue(instance.hasTag("tag_3_2"));
+        assertTrue(instance.hasTag("tag_2_1"));
+        assertTrue(instance.hasTag(tagset.getTag("tag_1_1")));
+        assertTrue(instance.hasTag(tagset.getTag("tag_3_2")));
+        assertTrue(instance.hasTag(tagset.getTag("tag_2_1")));
     }
 
     /**
@@ -188,7 +188,7 @@ public class GrammaticalPropertiesImplTest extends TestCase {
         System.out.println("getSetTagset");
         Tagset tagset = createTagset();
         Tagset tagset2 = createTagset();
-        String mark = "tag_1.1:tag_3.2:tag_2.1";
+        String mark = "tag_1_1:tag_3_2:tag_2_1";
         GrammaticalPropertiesImpl instance = new GrammaticalPropertiesImpl(mark, tagset);
         assertTrue(instance.getTagset() == tagset);
         instance.setTagset(tagset2);
