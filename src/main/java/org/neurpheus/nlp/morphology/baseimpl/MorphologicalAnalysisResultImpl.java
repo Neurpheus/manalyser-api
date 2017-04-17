@@ -68,7 +68,7 @@ public class MorphologicalAnalysisResultImpl
             final String coreValue, final String morphemes,
             final GrammaticalPropertiesList gramPropertiesList) {
         super(formValue, accuracyValue);
-        core = coreValue;
+        core = coreValue == null ? "" : coreValue;
         grammaticalMorphemes = morphemes;
         grammaticalPropertiesList = gramPropertiesList;
     }
